@@ -1,11 +1,22 @@
 {
   
+    
+        "post0": {
+            "title": "Delicious Postage",
+            "content": "I have a made a New Year’s resolution. I just made it today, but it is not a late New Year’s resolution. It is an early Lunar New Year’s resolution. 新年快乐！ I have resolved to lower my inhibitions about writing things in public by treating my blog more like a Delicio.us collection of links. . Delicious Postage . Do you remember delicio.us? To be honest, I barely do. But somehow it was going to usher in a golden age of an open internet that made orderly sense, with the best stuff on top, by everyone sharing their bookmarks and hash-tagging them. As you may have noticed, that didn’t happen. . The dream lives on though. If we can figure this thing out before the tech monopolies capture all the commons or crypto burns up the planet, we may still find an internet utopia. . I don’t know how to do that, but I do know how to read the internet. The things that I read and post about here are not necessarily things I agree with, just things that I am reading/watching/listening to. .",
+            "url": "https://blog.discurs.us/2022/01/23/delicious-postage.html",
+            "relUrl": "/2022/01/23/delicious-postage.html",
+            "date": " • Jan 23, 2022"
+        }
+        
+    
+  
 
   
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About",
           "content": "An Epic Preamble . In the remote forgotten past, when world-wide-web standards were young, and the cyber-tubes were still cooling, idealists proclaimed that: . “Information wants to be free” . and connection would bring us together. Personal websites would give every person a voice, friend-of-a-friend files would establish trust, syndication feeds would distribute the blessings, and the world would live as one. . That age expired before its dawning. Voices were captured in walled gardens, while the words of the profits are written out for copypasta stenciled in every margin, and chasing each of us across the pages. . Disinformation wants to be free and ad-supported . But some who remember the old order, continued to practice the way of truth. . Me . I am just a dog on the internet, and a subjunctive scaling expert. That is a lie, but you know what they say about sleeping dogs, and I am genuinely an expert napper. I am sometimes known as Lucien Carroll. I am a computational linguist. . Platform . This website is powered by fastpages, a blogging platform that is based on Github pages and natively supports Jupyter notebooks in addition to other formats. .",
           "url": "https://blog.discurs.us/about/",
