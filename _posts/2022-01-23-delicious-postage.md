@@ -1,11 +1,9 @@
 ---
-toc: true
+toc: false
 layout: post
 description: I have resolved to treat my blog more like a del.icio.us collection of links.
 title: Delicious Postage
 ---
-
-# Delicious Postage
 
 I have a made a New Year's resolution. I just made it today, but it is not a late New Year's resolution. It is an early Lunar New Year's resolution. 新年快乐！
 I have resolved to lower my inhibitions about writing things in public by treating my blog more like a del.icio.us collection of links.
