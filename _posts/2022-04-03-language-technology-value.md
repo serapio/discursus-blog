@@ -67,7 +67,7 @@ So though English is the default language in many of the most visited websites, 
 ## Declining dominance
 Since the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.
 
-[![Global GDP by region 2010 to 2019](images/gdp.png)](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?end=2019&locations=XU-ZJ-Z7-Z4-8S-ZQ-ZG&start=2010&view=chart)
+[![Global GDP by region 2010 to 2019](/images/gdp.png)](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?end=2019&locations=XU-ZJ-Z7-Z4-8S-ZQ-ZG&start=2010&view=chart)
 
 All of this means that if you are on a research team investigating language technology or on a product team developing an NLP-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.
 
