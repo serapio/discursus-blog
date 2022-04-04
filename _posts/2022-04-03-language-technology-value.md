@@ -2,11 +2,10 @@
 toc: false
 layout: post
 description: English is a dominant default in NLP but it's not so special. The economic value of localized language technology is large and growing.
-summary: English is a dominant default in NLP but it's not so special. The economic value of localized language technology is large and growing.
 title: English is a minority language too
 ---
 
-In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 1 in 2. So in tech circles, much exposure to languages beyond English positions those other languages as personal/home languages, and even as home languages they are losing ground to English from generation to generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don't use English in business life are switching to it.
+In California, [more than 1 out of 4 residents were born in another country](https://www.ppic.org/publication/immigrants-in-california/). In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, [about 3 out of 4](https://jointventure.org/images/stories/pdf/index2018.pdf). So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, [replaced by the second or third generation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526379/). Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don't use English in business life are switching to it.
 
 It's certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, [English is often treated as unspoken default](https://thegradient.pub/the-benderrule-on-naming-the-languages-we-study-and-why-it-matters/). However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining.
 
@@ -69,6 +68,6 @@ Since the economies of Asia and Africa have generally been growing faster than t
 
 [![Global GDP by region 2010 to 2019](/images/gdp.png)](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?end=2019&locations=XU-ZJ-Z7-Z4-8S-ZQ-ZG&start=2010&view=chart)
 
-All of this means that if you are on a research team investigating language technology or on a product team developing an NLP-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.
+All of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.
 
-The good news is that the *cost* of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post.
+Fortunately, the *cost* of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post.
