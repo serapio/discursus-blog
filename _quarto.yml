@@ -25,5 +25,8 @@ format:
     theme: morph
     css: styles.css
 
+resources: 
+  - CNAME
+
 editor: visual
 
