@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://blog.discurs.us/2022/01/23/delicious-postage.html</loc>
-<lastmod>2022-01-23T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://blog.discurs.us/2022/03/20/utijaore-%C3%B1am%CA%89-ch%CA%89'%CA%89.html</loc>
-<lastmod>2022-03-20T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://blog.discurs.us/2022/04/03/language-technology-value.html</loc>
-<lastmod>2022-04-03T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://blog.discurs.us/about/</loc>
-</url>
-<url>
-<loc>https://blog.discurs.us/</loc>
-</url>
-<url>
-<loc>https://blog.discurs.us/search/</loc>
-</url>
-<url>
-<loc>https://blog.discurs.us/categories/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</loc>
+    <lastmod>2023-10-26T03:17:02.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-01-23-delicious-postage/index.html</loc>
+    <lastmod>2023-10-26T03:17:01.080Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/about.html</loc>
+    <lastmod>2023-10-26T03:17:00.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/index.html</loc>
+    <lastmod>2023-10-26T03:17:00.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</loc>
+    <lastmod>2023-10-26T03:17:01.552Z</lastmod>
+  </url>
 </urlset>

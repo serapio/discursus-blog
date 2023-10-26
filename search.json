@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html",
+    "href": "posts/2022-04-03-english-minority-language/index.html",
+    "title": "English is a minority language too",
+    "section": "",
+    "text": "In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 3 out of 4. So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, replaced by the second or third generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don’t use English in business life are switching to it.\nIt’s certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, English is often treated as unspoken default. However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "title": "English is a minority language too",
+    "section": "A minority of economic activity",
+    "text": "A minority of economic activity\nIf you associate the GDP of each country or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:\n\n\n\nRank\nLanguage\nGDP($US Billions)\n% of World GDP\n\n\n\n\n1\nEnglish\n24.86\n29.59%\n\n\n2\nChinese\n14.73\n17.53%\n\n\n3\nJapanese\n5.15\n6.14%\n\n\n4\nGerman\n4.82\n5.74%\n\n\n5\nSpanish\n4.77\n5.67%\n\n\n6\nFrench\n3.41\n4.06%\n\n\n7\nArabic\n2.75\n3.27%\n\n\n8\nPortuguese\n2.08\n2.48%\n\n\n9\nItalian\n2.00\n2.38%\n\n\n10\nRussian\n1.87\n2.22%\n\n\n\nWith the caveat that not all economic activity in a country is carried out in the dominant language, but recognizing that most economic activity in Japan, for example, is carried out in Japanese, we can make some fair generalizations. Even though English is the language accounting for the most nominal GDP, it is approximately the same sum as the next three languages combined (Chinese, Japanese and German), and the top 10 languages here account for less than 80% of the global GDP."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "title": "English is a minority language too",
+    "section": "A minority of technology users",
+    "text": "A minority of technology users\nSurveys of technology users similarly show a long fat tail of preferred languages. In the internet language survey results shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.\n\n\n\nRank\nLanguage\nUsers (millions)\n% of World Users\n\n\n\n\n1\nEnglish\n1186\n25.90%\n\n\n2\nChinese\n888\n19.40%\n\n\n3\nSpanish\n364\n7.90%\n\n\n4\nArabic\n237\n5.20%\n\n\n5\nPortuguese\n172\n3.70%\n\n\n6\nIndonesian\n198\n4.30%\n\n\n7\nFrench\n152\n3.30%\n\n\n8\nJapanese\n119\n2.60%\n\n\n9\nRussian\n116\n2.50%\n\n\n10\nGerman\n93\n2.00%\n\n\n\nIf you look at surveys of smartphone penetration per country and assign each population to just one language, Chinese jumps far into the lead, with English in second place."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "title": "English is a minority language too",
+    "section": "A minority of internet content",
+    "text": "A minority of internet content\nA standard survey of website languages reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the Indicators of languages in the internet survey produce much lower estimates of the portion of internet content in English.\n\n\n\nRank\nLanguage\nContent\n\n\n\n\n1\nChinese\n21.60%\n\n\n2\nEnglish\n19.60%\n\n\n3\nSpanish\n7.85%\n\n\n4\nHindi\n3.76%\n\n\n5\nRussian\n3.76%\n\n\n6\nFrench\n3.33%\n\n\n7\nPortuguese\n3.13%\n\n\n8\nArabic\n3.09%\n\n\n9\nJapanese\n2.66%\n\n\n10\nGerman\n2.37%\n\n\n\nSo though English is the default language in many of the most visited websites, it has dropped into second place in overall internet content. As with other tables above, this distribution also has a long fat tail. The top ten languages here account for only 71% of the surveyed content."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "href": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "title": "English is a minority language too",
+    "section": "Declining dominance",
+    "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
+  },
+  {
+    "objectID": "posts/2022-01-23-delicious-postage/index.html",
+    "href": "posts/2022-01-23-delicious-postage/index.html",
+    "title": "Delicious Postage",
+    "section": "",
+    "text": "I have a made a New Year’s resolution. I just made it today, but it is not a late New Year’s resolution. It is an early Lunar New Year’s resolution. 新年快乐！ I have resolved to lower my inhibitions about writing things in public by treating my blog more like a del.icio.us collection of links.\nDo you remember delicio.us? To be honest, I barely do. But somehow it was going to usher in a golden age of an open internet that made orderly sense, with the best stuff on top, by everyone sharing their bookmarks and hash-tagging them. As you may have noticed, that didn’t happen.\nThe dream lives on though. If we can figure this thing out before the tech monopolies capture all the commons or crypto burns up the planet, we may still find an internet utopia.\nI don’t know how to do that, but I do know how to read the internet. The things that I read and post about here are not necessarily things I agree with, just things that I am reading/watching/listening to."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#an-epic-preamble",
+    "href": "about.html#an-epic-preamble",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#me",
+    "href": "about.html#me",
+    "title": "About",
+    "section": "Me",
+    "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucien’s weblog",
+    "section": "",
+    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\n  \n\n\n\n\nDelicious Postage\n\n\n\n\n\nI have resolved to treat my blog more like a del.icio.us collection of links.\n\n\n\n\n\n\nJan 23, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2022-03-20-utijaore/index.html",
+    "href": "posts/2022-03-20-utijaore/index.html",
+    "title": "Utija’ore ñamʉ chʉ’ʉ",
+    "section": "",
+    "text": "For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through Ko’rehuajʉ chʉ’ore cutuñu over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:\n\n\n\nKoreguaje\nMixtec\nEnglish\n\n\n\n\nvʉ’e [wɨʔe]\nve’e [βeʔe]\nhouse\n\n\nchʉ’ʉ [tʃɨʔɨ]\nyu’u [ʒuʔu]\nme\n\n\njʉ̃jʉ̃ [hɨ̃hɨ̃]\njãjã [xãxã]\nyes\n\n\n\nBut if you look at larger lists of comparative vocabulary, for Otomanguean and Tucanoan, there are no such similarities. It seems that these few are coincidentally similar words, in similar sound systems."
+  }
+]
