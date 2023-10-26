@@ -22,7 +22,7 @@ website:
         
 format:
   html:
-    theme: morph
+    theme: readable
     css: styles.css
 
 resources: 
