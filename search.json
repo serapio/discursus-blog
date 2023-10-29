@@ -42,6 +42,13 @@
     "text": "I have a made a New Year’s resolution. I just made it today, but it is not a late New Year’s resolution. It is an early Lunar New Year’s resolution. 新年快乐！ I have resolved to lower my inhibitions about writing things in public by treating my blog more like a del.icio.us collection of links.\nDo you remember delicio.us? To be honest, I barely do. But somehow it was going to usher in a golden age of an open internet that made orderly sense, with the best stuff on top, by everyone sharing their bookmarks and hash-tagging them. As you may have noticed, that didn’t happen.\nThe dream lives on though. If we can figure this thing out before the tech monopolies capture all the commons or crypto burns up the planet, we may still find an internet utopia.\nI don’t know how to do that, but I do know how to read the internet. The things that I read and post about here are not necessarily things I agree with, just things that I am reading/watching/listening to."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucien’s weblog",
+    "section": "",
+    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nDelicious Postage\n\n\n\n\n\nI have resolved to treat my blog more like a del.icio.us collection of links.\n\n\n\n\n\n\nJan 23, 2022\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -63,11 +70,11 @@
     "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lucien’s weblog",
+    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
+    "href": "posts/2021-04-04-luganda-finetune/index.html",
+    "title": "Wav2Vec2 Luganda",
     "section": "",
-    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\n  \n\n\n\n\nDelicious Postage\n\n\n\n\n\nI have resolved to treat my blog more like a del.icio.us collection of links.\n\n\n\n\n\n\nJan 23, 2022\n\n\nLucien Carroll\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
   },
   {
     "objectID": "posts/2022-03-20-utijaore/index.html",
