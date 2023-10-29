@@ -22,9 +22,9 @@ website:
         
 format:
   html:
-    theme: readable
+    theme: vapor
     css: styles.css
-
+  
 resources: 
   - CNAME
 
