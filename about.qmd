@@ -12,6 +12,7 @@ about:
       href: https://www.linkedin.com/in/lucien-carroll/
     - icon: mastodon
       aria-label: Mastodon
+      rel: me
       href: https://mastodon.social/@serapio
 ---
 
