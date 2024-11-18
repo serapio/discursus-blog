@@ -35,11 +35,39 @@
     "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
   },
   {
-    "objectID": "posts/2022-01-23-delicious-postage/index.html",
-    "href": "posts/2022-01-23-delicious-postage/index.html",
-    "title": "Delicious Postage",
+    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
+    "href": "posts/2021-04-04-luganda-finetune/index.html",
+    "title": "Wav2Vec2 Luganda",
     "section": "",
-    "text": "I have a made a New Year’s resolution. I just made it today, but it is not a late New Year’s resolution. It is an early Lunar New Year’s resolution. 新年快乐！ I have resolved to lower my inhibitions about writing things in public by treating my blog more like a del.icio.us collection of links.\nDo you remember delicio.us? To be honest, I barely do. But somehow it was going to usher in a golden age of an open internet that made orderly sense, with the best stuff on top, by everyone sharing their bookmarks and hash-tagging them. As you may have noticed, that didn’t happen.\nThe dream lives on though. If we can figure this thing out before the tech monopolies capture all the commons or crypto burns up the planet, we may still find an internet utopia.\nI don’t know how to do that, but I do know how to read the internet. The things that I read and post about here are not necessarily things I agree with, just things that I am reading/watching/listening to."
+    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucien’s weblog",
+    "section": "",
+    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#an-epic-preamble",
+    "href": "about.html#an-epic-preamble",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#me",
+    "href": "about.html#me",
+    "title": "About",
+    "section": "Me",
+    "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
   },
   {
     "objectID": "posts/2020-11-01-feel-old/index.html",
@@ -173,41 +201,6 @@
     "title": "Want to feel old?",
     "section": "History is still here with us",
     "text": "History is still here with us\n\n\n\nWinfred J. Sanborn as a smiling old man\n\n\nTo be terribly unsubtle, here are some lessons I see:\n\nHistory has changed so much and yet it is still here with us. The children of my grandmothers’ generation–who were taught that it was a health risk to swim with Black kids and that Mexican American kids belong in Mexico, and shouldn’t marry each other–overcame enormous obstacles and their own prejudices to create the good old days of my generation’s childhood.\nThe arc of history that “bends towards justice” is loooong, and doesn’t bend on its own. People bend it.\nThe smart and nice people we often admire, who take centrist views on the issues of the day, are essential for a civil society, but they won’t be the leaders who bend history towards justice. Though they may well be the deciding vote when the tide changes.\nIf you, like me, are one of those people who like civil society, take a good hard look at what your positions will look like in 50 or 100 years. Use the influence you have to make history step lively towards justice.\nThe current levels of polarization and inequality are serious problems, but they can be fixed. We need to remind each other that we are on one team against the forces that threaten to destroy human society, find common ground, and work together like we are fighting a war–not with each other, but with poverty, climate change, dehumanization, etc.\nElections matter, but they are just the beginning. If you don’t like your options, make your favorite options happen. If you do like your options, don’t count on your heroes to do the right thing. They are human too, and may need some prodding from time to time.\nThis epidemic will pass. Eventually enough of us will be doing some combination of masking+distancing+testing+tracing that the uncontrolled spread will be stopped. Let’s get there ASAP, and don’t let racism and classism compound the problem. We are literally all in this together."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
-  },
-  {
-    "objectID": "about.html#an-epic-preamble",
-    "href": "about.html#an-epic-preamble",
-    "title": "About",
-    "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
-  },
-  {
-    "objectID": "about.html#me",
-    "href": "about.html#me",
-    "title": "About",
-    "section": "Me",
-    "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lucien’s weblog",
-    "section": "",
-    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nDelicious Postage\n\n\n\n\n\nI have resolved to treat my blog more like a del.icio.us collection of links.\n\n\n\n\n\n\nJan 23, 2022\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
-    "href": "posts/2021-04-04-luganda-finetune/index.html",
-    "title": "Wav2Vec2 Luganda",
-    "section": "",
-    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
   },
   {
     "objectID": "posts/2022-03-20-utijaore/index.html",
