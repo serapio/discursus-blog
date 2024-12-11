@@ -10,7 +10,7 @@
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 13 Dec 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 11 Dec 2024 08:00:00 GMT</lastBuildDate>
 <item>
   <title>Machine Learning is Evaluation All the Way Down</title>
   <dc:creator>Lucien Carroll</dc:creator>
@@ -61,7 +61,7 @@
 
  ]]></description>
   <guid>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</guid>
-  <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+  <pubDate>Wed, 11 Dec 2024 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>English is a minority language too</title>
