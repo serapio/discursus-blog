@@ -10,7 +10,7 @@ This is the first post in a series about the ways that evaluation in modern time
 
 The first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it's evaluation.
 
-[![A tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)](mybloodyself_turtles.jpg){fig-alt="Three turtles stacked up" fig-align="center" width="400"}](https://www.flickr.com/photos/mybloodyself/1108834349/)
+[![A tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)](mybloodyself_turtles.jpg){fig-alt="Three turtles stacked up" fig-align="left" width="400"}](https://www.flickr.com/photos/mybloodyself/1108834349/)
 
 ## The foundation is evaluation
 
@@ -20,12 +20,12 @@ The bottom turtle might be extrinsic evaluation, meaning evaluation from the out
 
 And the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.
 
-[![A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)](turtle_on_stone.jpg){fig-alt="One small turtle on top of various other turtles" fig-align="center" width="400"}](https://foto.wuestenigel.com/turtle-on-a-stone/)
+[![A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)](turtle_on_stone.jpg){fig-alt="One small turtle on top of various other turtles" fig-align="left" width="400"}](https://foto.wuestenigel.com/turtle-on-a-stone/)
 
 ## There is lots to evaluate
 
 And in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.
 
-[![Two turtle piles (photo CC-BY-ND-2.0 Nick Harris)](nickharris1_turtle_pileup.jpg){fig-alt="Two stacks of two turtles each" fig-align="center" width="400"}](https://flickr.com/photos/nickharris1/4858787832)
+[![Two turtle piles (photo CC-BY-ND-2.0 Nick Harris)](nickharris1_turtle_pileup.jpg){fig-alt="Two stacks of two turtles each" fig-align="left" width="400"}](https://flickr.com/photos/nickharris1/4858787832)
 
 It is true that LLMs add a bit more complexity here, where it's not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it's all evaluation.
