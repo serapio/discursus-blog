@@ -1,5 +1,5 @@
 ---
-date: 2024-12-13
+date: 2024-12-11
 description: Machine learning is about evaluation, first and foremost and through to the end
 title: Machine Learning is Evaluation All the Way Down
 ---
