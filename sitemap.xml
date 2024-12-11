@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</loc>
-    <lastmod>2024-11-18T05:05:46.707Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</loc>
-    <lastmod>2024-11-18T05:05:45.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/index.html</loc>
-    <lastmod>2024-11-18T05:05:44.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/about.html</loc>
-    <lastmod>2024-11-18T05:05:43.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</loc>
-    <lastmod>2024-11-18T05:05:45.150Z</lastmod>
+    <loc>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</loc>
+    <lastmod>2024-12-11T16:20:28.865Z</lastmod>
   </url>
   <url>
     <loc>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</loc>
-    <lastmod>2024-11-18T05:05:46.004Z</lastmod>
+    <lastmod>2024-12-11T16:20:27.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</loc>
+    <lastmod>2024-12-11T16:20:26.465Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/about.html</loc>
+    <lastmod>2024-12-11T16:20:24.469Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/index.html</loc>
+    <lastmod>2024-12-11T16:20:25.503Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</loc>
+    <lastmod>2024-12-11T16:20:26.968Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</loc>
+    <lastmod>2024-12-11T16:20:28.193Z</lastmod>
   </url>
 </urlset>

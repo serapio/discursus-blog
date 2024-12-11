@@ -1,73 +1,45 @@
 [
   {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html",
-    "href": "posts/2022-04-03-english-minority-language/index.html",
-    "title": "English is a minority language too",
+    "objectID": "posts/2024-12-11-ml-principles/index.html",
+    "href": "posts/2024-12-11-ml-principles/index.html",
+    "title": "Machine Learning is Evaluation All the Way Down",
     "section": "",
-    "text": "In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 3 out of 4. So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, replaced by the second or third generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don’t use English in business life are switching to it.\nIt’s certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, English is often treated as unspoken default. However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining."
+    "text": "This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today."
   },
   {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
-    "title": "English is a minority language too",
-    "section": "A minority of economic activity",
-    "text": "A minority of economic activity\nIf you associate the GDP of each country or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:\n\n\n\nRank\nLanguage\nGDP($US Billions)\n% of World GDP\n\n\n\n\n1\nEnglish\n24.86\n29.59%\n\n\n2\nChinese\n14.73\n17.53%\n\n\n3\nJapanese\n5.15\n6.14%\n\n\n4\nGerman\n4.82\n5.74%\n\n\n5\nSpanish\n4.77\n5.67%\n\n\n6\nFrench\n3.41\n4.06%\n\n\n7\nArabic\n2.75\n3.27%\n\n\n8\nPortuguese\n2.08\n2.48%\n\n\n9\nItalian\n2.00\n2.38%\n\n\n10\nRussian\n1.87\n2.22%\n\n\n\nWith the caveat that not all economic activity in a country is carried out in the dominant language, but recognizing that most economic activity in Japan, for example, is carried out in Japanese, we can make some fair generalizations. Even though English is the language accounting for the most nominal GDP, it is approximately the same sum as the next three languages combined (Chinese, Japanese and German), and the top 10 languages here account for less than 80% of the global GDP."
+    "objectID": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
+    "title": "Machine Learning is Evaluation All the Way Down",
+    "section": "It’s all evaluation",
+    "text": "It’s all evaluation\nThe first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it’s evaluation.\n\n\n\nA tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)"
   },
   {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
-    "title": "English is a minority language too",
-    "section": "A minority of technology users",
-    "text": "A minority of technology users\nSurveys of technology users similarly show a long fat tail of preferred languages. In the internet language survey results shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.\n\n\n\nRank\nLanguage\nUsers (millions)\n% of World Users\n\n\n\n\n1\nEnglish\n1186\n25.90%\n\n\n2\nChinese\n888\n19.40%\n\n\n3\nSpanish\n364\n7.90%\n\n\n4\nArabic\n237\n5.20%\n\n\n5\nPortuguese\n172\n3.70%\n\n\n6\nIndonesian\n198\n4.30%\n\n\n7\nFrench\n152\n3.30%\n\n\n8\nJapanese\n119\n2.60%\n\n\n9\nRussian\n116\n2.50%\n\n\n10\nGerman\n93\n2.00%\n\n\n\nIf you look at surveys of smartphone penetration per country and assign each population to just one language, Chinese jumps far into the lead, with English in second place."
+    "objectID": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
+    "title": "Machine Learning is Evaluation All the Way Down",
+    "section": "The foundation is evaluation",
+    "text": "The foundation is evaluation\nThe bottom turtle might be extrinsic evaluation, meaning evaluation from the outside for the purpose that the whole system is for. You need your data to be ecologically valid, comparable to data in the wild. And you need your metrics to be closely aligned with product objectives. If your system has already been unleashed in the wild, your bottom turtle might even be field testing or live metrics from regular usage. But for the sake of the privacy and safety of your users, you probably can’t or shouldn’t measure live usage in as much detail as you can in offline testing. And you probably shouldn’t depend on users to explore your system’s worst behavior. But whatever data sources you have available, your foundational evaluations should be carefully informative of what your system is doing in the wild, and carefully aligned with product goals."
   },
   {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
-    "title": "English is a minority language too",
-    "section": "A minority of internet content",
-    "text": "A minority of internet content\nA standard survey of website languages reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the Indicators of languages in the internet survey produce much lower estimates of the portion of internet content in English.\n\n\n\nRank\nLanguage\nContent\n\n\n\n\n1\nChinese\n21.60%\n\n\n2\nEnglish\n19.60%\n\n\n3\nSpanish\n7.85%\n\n\n4\nHindi\n3.76%\n\n\n5\nRussian\n3.76%\n\n\n6\nFrench\n3.33%\n\n\n7\nPortuguese\n3.13%\n\n\n8\nArabic\n3.09%\n\n\n9\nJapanese\n2.66%\n\n\n10\nGerman\n2.37%\n\n\n\nSo though English is the default language in many of the most visited websites, it has dropped into second place in overall internet content. As with other tables above, this distribution also has a long fat tail. The top ten languages here account for only 71% of the surveyed content."
+    "objectID": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
+    "title": "Machine Learning is Evaluation All the Way Down",
+    "section": "Training is evaluation",
+    "text": "Training is evaluation\nAnd the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.\n\n\n\nA turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)"
   },
   {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
-    "href": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
-    "title": "English is a minority language too",
-    "section": "Declining dominance",
-    "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
+    "objectID": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
+    "href": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
+    "title": "Machine Learning is Evaluation All the Way Down",
+    "section": "There is lots to evaluate",
+    "text": "There is lots to evaluate\nAnd in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.\n\n\n\nTwo turtle piles (photo CC-BY-ND-2.0 Nick Harris)\n\n\nIt is true that LLMs add a bit more complexity here, where it’s not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it’s all evaluation."
   },
   {
-    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
-    "href": "posts/2021-04-04-luganda-finetune/index.html",
-    "title": "Wav2Vec2 Luganda",
+    "objectID": "posts/2022-03-20-utijaore/index.html",
+    "href": "posts/2022-03-20-utijaore/index.html",
+    "title": "Utija’ore ñamʉ chʉ’ʉ",
     "section": "",
-    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lucien’s weblog",
-    "section": "",
-    "text": "English is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
-  },
-  {
-    "objectID": "about.html#an-epic-preamble",
-    "href": "about.html#an-epic-preamble",
-    "title": "About",
-    "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
-  },
-  {
-    "objectID": "about.html#me",
-    "href": "about.html#me",
-    "title": "About",
-    "section": "Me",
-    "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
+    "text": "For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through Ko’rehuajʉ chʉ’ore cutuñu over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:\n\n\n\nKoreguaje\nMixtec\nEnglish\n\n\n\n\nvʉ’e [wɨʔe]\nve’e [βeʔe]\nhouse\n\n\nchʉ’ʉ [tʃɨʔɨ]\nyu’u [ʒuʔu]\nme\n\n\njʉ̃jʉ̃ [hɨ̃hɨ̃]\njãjã [xãxã]\nyes\n\n\n\nBut if you look at larger lists of comparative vocabulary, for Otomanguean and Tucanoan, there are no such similarities. It seems that these few are coincidentally similar words, in similar sound systems."
   },
   {
     "objectID": "posts/2020-11-01-feel-old/index.html",
@@ -203,10 +175,73 @@
     "text": "History is still here with us\n\n\n\nWinfred J. Sanborn as a smiling old man\n\n\nTo be terribly unsubtle, here are some lessons I see:\n\nHistory has changed so much and yet it is still here with us. The children of my grandmothers’ generation–who were taught that it was a health risk to swim with Black kids and that Mexican American kids belong in Mexico, and shouldn’t marry each other–overcame enormous obstacles and their own prejudices to create the good old days of my generation’s childhood.\nThe arc of history that “bends towards justice” is loooong, and doesn’t bend on its own. People bend it.\nThe smart and nice people we often admire, who take centrist views on the issues of the day, are essential for a civil society, but they won’t be the leaders who bend history towards justice. Though they may well be the deciding vote when the tide changes.\nIf you, like me, are one of those people who like civil society, take a good hard look at what your positions will look like in 50 or 100 years. Use the influence you have to make history step lively towards justice.\nThe current levels of polarization and inequality are serious problems, but they can be fixed. We need to remind each other that we are on one team against the forces that threaten to destroy human society, find common ground, and work together like we are fighting a war–not with each other, but with poverty, climate change, dehumanization, etc.\nElections matter, but they are just the beginning. If you don’t like your options, make your favorite options happen. If you do like your options, don’t count on your heroes to do the right thing. They are human too, and may need some prodding from time to time.\nThis epidemic will pass. Eventually enough of us will be doing some combination of masking+distancing+testing+tracing that the uncontrolled spread will be stopped. Let’s get there ASAP, and don’t let racism and classism compound the problem. We are literally all in this together."
   },
   {
-    "objectID": "posts/2022-03-20-utijaore/index.html",
-    "href": "posts/2022-03-20-utijaore/index.html",
-    "title": "Utija’ore ñamʉ chʉ’ʉ",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through Ko’rehuajʉ chʉ’ore cutuñu over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:\n\n\n\nKoreguaje\nMixtec\nEnglish\n\n\n\n\nvʉ’e [wɨʔe]\nve’e [βeʔe]\nhouse\n\n\nchʉ’ʉ [tʃɨʔɨ]\nyu’u [ʒuʔu]\nme\n\n\njʉ̃jʉ̃ [hɨ̃hɨ̃]\njãjã [xãxã]\nyes\n\n\n\nBut if you look at larger lists of comparative vocabulary, for Otomanguean and Tucanoan, there are no such similarities. It seems that these few are coincidentally similar words, in similar sound systems."
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#an-epic-preamble",
+    "href": "about.html#an-epic-preamble",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#me",
+    "href": "about.html#me",
+    "title": "About",
+    "section": "Me",
+    "text": "Me\nI am just a dog on the internet,\nand a subjunctive scaling expert.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucien’s weblog",
+    "section": "",
+    "text": "Machine Learning is Evaluation All the Way Down\n\n\n\n\n\nMachine learning is about evaluation, first and foremost and through to the end\n\n\n\n\n\n\nDec 13, 2024\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nEnglish is a minority language too\n\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
+    "href": "posts/2021-04-04-luganda-finetune/index.html",
+    "title": "Wav2Vec2 Luganda",
+    "section": "",
+    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html",
+    "href": "posts/2022-04-03-english-minority-language/index.html",
+    "title": "English is a minority language too",
+    "section": "",
+    "text": "In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 3 out of 4. So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, replaced by the second or third generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don’t use English in business life are switching to it.\nIt’s certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, English is often treated as unspoken default. However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "title": "English is a minority language too",
+    "section": "A minority of economic activity",
+    "text": "A minority of economic activity\nIf you associate the GDP of each country or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:\n\n\n\nRank\nLanguage\nGDP($US Billions)\n% of World GDP\n\n\n\n\n1\nEnglish\n24.86\n29.59%\n\n\n2\nChinese\n14.73\n17.53%\n\n\n3\nJapanese\n5.15\n6.14%\n\n\n4\nGerman\n4.82\n5.74%\n\n\n5\nSpanish\n4.77\n5.67%\n\n\n6\nFrench\n3.41\n4.06%\n\n\n7\nArabic\n2.75\n3.27%\n\n\n8\nPortuguese\n2.08\n2.48%\n\n\n9\nItalian\n2.00\n2.38%\n\n\n10\nRussian\n1.87\n2.22%\n\n\n\nWith the caveat that not all economic activity in a country is carried out in the dominant language, but recognizing that most economic activity in Japan, for example, is carried out in Japanese, we can make some fair generalizations. Even though English is the language accounting for the most nominal GDP, it is approximately the same sum as the next three languages combined (Chinese, Japanese and German), and the top 10 languages here account for less than 80% of the global GDP."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "title": "English is a minority language too",
+    "section": "A minority of technology users",
+    "text": "A minority of technology users\nSurveys of technology users similarly show a long fat tail of preferred languages. In the internet language survey results shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.\n\n\n\nRank\nLanguage\nUsers (millions)\n% of World Users\n\n\n\n\n1\nEnglish\n1186\n25.90%\n\n\n2\nChinese\n888\n19.40%\n\n\n3\nSpanish\n364\n7.90%\n\n\n4\nArabic\n237\n5.20%\n\n\n5\nPortuguese\n172\n3.70%\n\n\n6\nIndonesian\n198\n4.30%\n\n\n7\nFrench\n152\n3.30%\n\n\n8\nJapanese\n119\n2.60%\n\n\n9\nRussian\n116\n2.50%\n\n\n10\nGerman\n93\n2.00%\n\n\n\nIf you look at surveys of smartphone penetration per country and assign each population to just one language, Chinese jumps far into the lead, with English in second place."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "title": "English is a minority language too",
+    "section": "A minority of internet content",
+    "text": "A minority of internet content\nA standard survey of website languages reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the Indicators of languages in the internet survey produce much lower estimates of the portion of internet content in English.\n\n\n\nRank\nLanguage\nContent\n\n\n\n\n1\nChinese\n21.60%\n\n\n2\nEnglish\n19.60%\n\n\n3\nSpanish\n7.85%\n\n\n4\nHindi\n3.76%\n\n\n5\nRussian\n3.76%\n\n\n6\nFrench\n3.33%\n\n\n7\nPortuguese\n3.13%\n\n\n8\nArabic\n3.09%\n\n\n9\nJapanese\n2.66%\n\n\n10\nGerman\n2.37%\n\n\n\nSo though English is the default language in many of the most visited websites, it has dropped into second place in overall internet content. As with other tables above, this distribution also has a long fat tail. The top ten languages here account for only 71% of the surveyed content."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "href": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "title": "English is a minority language too",
+    "section": "Declining dominance",
+    "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
   }
 ]

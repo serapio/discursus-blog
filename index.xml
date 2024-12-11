@@ -10,7 +10,59 @@
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sun, 03 Apr 2022 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 13 Dec 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Machine Learning is Evaluation All the Way Down</title>
+  <dc:creator>Lucien Carroll</dc:creator>
+  <link>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today.</p>
+<section id="its-all-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="its-all-evaluation">It’s all evaluation</h2>
+<p>The first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it’s evaluation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/mybloodyself/1108834349/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/mybloodyself_turtles.jpg" class="img-fluid figure-img" alt="Three turtles stacked up" width="400"></a></p>
+<figcaption class="figure-caption">A tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-foundation-is-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="the-foundation-is-evaluation">The foundation is evaluation</h2>
+<p>The bottom turtle might be extrinsic evaluation, meaning evaluation from the outside for the purpose that the whole system is for. You need your data to be ecologically valid, comparable to data in the wild. And you need your metrics to be closely aligned with product objectives. If your system has already been unleashed in the wild, your bottom turtle might even be field testing or live metrics from regular usage. But for the sake of the privacy and safety of your users, you probably can’t or shouldn’t measure live usage in as much detail as you can in offline testing. And you probably shouldn’t depend on users to explore your system’s worst behavior. But whatever data sources you have available, your foundational evaluations should be carefully informative of what your system is doing in the wild, and carefully aligned with product goals.</p>
+</section>
+<section id="training-is-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="training-is-evaluation">Training is evaluation</h2>
+<p>And the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://foto.wuestenigel.com/turtle-on-a-stone/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/turtle_on_stone.jpg" class="img-fluid figure-img" alt="One small turtle on top of various other turtles" width="400"></a></p>
+<figcaption class="figure-caption">A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)</figcaption>
+</figure>
+</div>
+</section>
+<section id="there-is-lots-to-evaluate" class="level2">
+<h2 class="anchored" data-anchor-id="there-is-lots-to-evaluate">There is lots to evaluate</h2>
+<p>And in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://flickr.com/photos/nickharris1/4858787832"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/nickharris1_turtle_pileup.jpg" class="img-fluid figure-img" alt="Two stacks of two turtles each" width="400"></a></p>
+<figcaption class="figure-caption">Two turtle piles (photo CC-BY-ND-2.0 Nick Harris)</figcaption>
+</figure>
+</div>
+<p>It is true that LLMs add a bit more complexity here, where it’s not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it’s all evaluation.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</guid>
+  <pubDate>Fri, 13 Dec 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>English is a minority language too</title>
   <dc:creator>Lucien Carroll</dc:creator>
