@@ -71,6 +71,9 @@
 </section>
 
  ]]></description>
+  <category>TMLP</category>
+  <category>ML</category>
+  <category>frogs</category>
   <guid>https://blog.discurs.us/posts/2025-01-03-ml-change/index.html</guid>
   <pubDate>Fri, 03 Jan 2025 08:00:00 GMT</pubDate>
 </item>
@@ -123,6 +126,10 @@
 </section>
 
  ]]></description>
+  <category>TMLP</category>
+  <category>ML</category>
+  <category>evaluation</category>
+  <category>turtles</category>
   <guid>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</guid>
   <pubDate>Wed, 11 Dec 2024 08:00:00 GMT</pubDate>
 </item>
@@ -373,6 +380,8 @@
 </section>
 
  ]]></description>
+  <category>languages</category>
+  <category>internationalization</category>
   <guid>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</guid>
   <pubDate>Sun, 03 Apr 2022 07:00:00 GMT</pubDate>
 </item>
@@ -417,6 +426,8 @@
 
 
  ]]></description>
+  <category>languages</category>
+  <category>linguistics</category>
   <guid>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</guid>
   <pubDate>Sun, 20 Mar 2022 07:00:00 GMT</pubDate>
 </item>
@@ -441,6 +452,8 @@
 
 
  ]]></description>
+  <category>languages</category>
+  <category>speech technology</category>
   <guid>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</guid>
   <pubDate>Sun, 04 Apr 2021 07:00:00 GMT</pubDate>
 </item>
@@ -648,6 +661,8 @@
 </section>
 
  ]]></description>
+  <category>history</category>
+  <category>politics</category>
   <guid>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</guid>
   <pubDate>Sun, 01 Nov 2020 07:00:00 GMT</pubDate>
 </item>
