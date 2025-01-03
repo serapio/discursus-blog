@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Here are some things I have written down.">
+<meta name="author" content="Lucien Carroll">
+<meta name="dcterms.date" content="2025-01-03">
+<meta name="description" content="Expect the role of machine learning in your system to change, as the system matures">
 
-<title>Discursus - Lucien’s weblog</title>
+<title>Discursus - Keep knowing why ML (Timeless ML Principles 2)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,50 +62,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-categories','listing-description','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Discursus" href="index.xml"></head>
-
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Discursus</span>
     </a>
   </div>
@@ -116,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -135,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -149,11 +118,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Lucien’s weblog</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Keep knowing why ML (Timeless ML Principles 2)</h1>
                   <div>
         <div class="description">
-          Here are some things I have written down.
+          Expect the role of machine learning in your system to change, as the system matures
         </div>
       </div>
                 </div>
@@ -162,203 +131,85 @@ ul.task-list li input[type="checkbox"] {
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lucien Carroll </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 3, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<p>This is the second post in a series about the ways that machine learning (ML) has not changed. (The first post is <a href="../../posts/2024-12-11-ml-principles/index.html">here</a>.) Not that it is the same in every way, but that key principles from classical ML are still important today. This one is a bit of a koan: the thing that has not changed is that you should expect change, understanding it terms of ML’s purpose in your system.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/the1pony/3728761118/in/album-72157621478400640"><img src="tadpole1.jpg" class="img-fluid figure-img" alt="A tadpole with hints of legs stares into the camera" width="512"></a></p>
+<figcaption class="figure-caption">A tadpole considers its existence (photo CC-ND the1pony “Oh Hai!”)</figcaption>
+</figure>
+</div>
+<section id="know-why-ml-is-involved" class="level2">
+<h2 class="anchored" data-anchor-id="know-why-ml-is-involved">Know why ML is involved</h2>
+<p>When developing a product feature based on machine learning, it’s important to remember that it is a product feature first, then a software system that provides that feature, and finally an ML-based system. The primary goal—it’s reason for existence—is that it is doing something useful for your end users, in the sociotechnical context of everything else your users are using, understanding, and doing. Some software system is necessary to deliver that feature, but it might not be necessary to use any ML model at all, especially in the larval stages of exploratory user research and system prototyping, or in baseline systems used for software testing, system evaluation, and data development. If models are necessary, they are just parts in that software system body, and it might not be the same class of model as you would use at a different stage for another purpose.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/the1pony/3727958415/in/album-72157621478400640"><img src="tadpole2.jpg" class="img-fluid figure-img" alt="A tadpole with little legs dangling" width="512"></a></p>
+<figcaption class="figure-caption">A tadpole prototyping some legs (photo CC-ND the1pony “Legs. I has them.”)</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-system-has-many-parts-and-each-part-has-its-function" class="level2">
+<h2 class="anchored" data-anchor-id="a-system-has-many-parts-and-each-part-has-its-function">A system has many parts, and each part has its function</h2>
+<p>A function that you believe will need a big model or a custom model might be better satisfied by deterministic rules, a random function, or a much simpler model, while you focus development on the overall software system, including metrics that can guide you towards solving your users’ real needs. On the other hand, you might want to use a very large custom model or a complicated pipeline in a slow offline system that you use as a silver labeler in data development, as a teacher model for a smaller faster production model, or as a foil in system evaluation and error analysis. So think carefully about why you need ML in the system, and for each ML role in the system, consider what trade-offs are preferred among quality, latency, reliability, usability, etc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/the1pony/3744076062/in/album-72157621478400640"><img src="tadpole3.jpg" class="img-fluid figure-img" width="512"></a></p>
+<figcaption class="figure-caption">Tadpole with compatible legs and tail (photo CC-ND the1pony “Smiling for the camera”)</figcaption>
+</figure>
+</div>
+</section>
+<section id="dont-let-the-tail-wag-the-frog" class="level2">
+<h2 class="anchored" data-anchor-id="dont-let-the-tail-wag-the-frog">Don’t let the tail wag the frog</h2>
+<p>A system with ML components requires additional considerations, beyond a deterministic system, but not instead of those. The non-deterministic components need their own evaluations, and the system as a whole needs end-to-end evaluation based on statistical design, beyond the end-to-end testing of logic and data formats. And resource planning and load testing will need to be tailored to the constraints of ML systems. But that is all on top of a foundation of good software development. Early exploratory user research and technical feasibility studies feed into careful designs, deterministic components are developed iteratively with classical testing, and feedback from software profiling, usability tests, and trials guide revisions to the system. But these adjustments to the architecture and development processes are for the sake of the product, for the users’ sake, not for the sake of machine learning as a goal, nor especially a particular class of model as a goal.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/the1pony/3776694971/in/album-72157621478400640"><img src="tadpole4.jpg" class="img-fluid figure-img" alt="Frog with a stub of a tail, resting on a hyacinth" width="512"></a></p>
+<figcaption class="figure-caption">Frog with a legacy tail (photo CC-ND the1pony “Frog on water hyacinth: this guy still has a small tail”)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-only-constant-is-change" class="level2">
+<h2 class="anchored" data-anchor-id="the-only-constant-is-change">The only constant is change</h2>
+<p>As development progresses, the system will mature while your own understanding of the problem space matures, and your data development efforts expand and enrich your datasets. Besides the planned upgrades to models that have better quality/latency/cost profiles, you may well find that initial prototypes were focused on the wrong problem, or that you need to replace pipelines with end-to-end models for quality reasons, or replace end-to-end models with pipelines for the sake of reliabilty, speed or cost. You’ll need to find ways to adjust assumptions while allowing contrastive evaluations and error analysis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/the1pony/3783106696/in/album-72157621478400640"><img src="frog.jpg" class="img-fluid figure-img" alt="Frog rests under a hyacinth leaf" width="512"></a></p>
+<figcaption class="figure-caption">An adult frog prepares for new changes (photo CC-ND the1pony “frog”)</figcaption>
+</figure>
+</div>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1735891200000" data-listing-file-modified-sort="1735892132512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/2025-01-03-ml-change/index.html"> <p class="card-img-top"><img src="posts\2025-01-03-ml-change\tadpole1.jpg" alt="A tadpole with hints of legs stares into the camera"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2025-01-03-ml-change/index.html">
-<h3 class="no-anchor listing-title">
-Keep knowing why ML (Timeless ML Principles 2)
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Expect the role of machine learning in your system to change, as the system matures</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2025-01-03-ml-change/index.html">
-<div class="listing-date">
-Jan 3, 2025
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1733904000000" data-listing-file-modified-sort="1735891640246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./posts/2024-12-11-ml-principles/index.html"> <p class="card-img-top"><img src="posts\2024-12-11-ml-principles\mybloodyself_turtles.jpg" alt="Three turtles stacked up"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2024-12-11-ml-principles/index.html">
-<h3 class="no-anchor listing-title">
-Machine learning is evaluation all the way down (Timeless ML Principles 1)
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Machine learning is about evaluation, first and foremost and through to the end</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2024-12-11-ml-principles/index.html">
-<div class="listing-date">
-Dec 11, 2024
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1648969200000" data-listing-file-modified-sort="1722232572709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="./posts/2022-04-03-english-minority-language/index.html"> <p class="card-img-top"><img src="posts\2022-04-03-english-minority-language\gdp.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2022-04-03-english-minority-language/index.html">
-<h3 class="no-anchor listing-title">
-English is a minority language too
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>English is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2022-04-03-english-minority-language/index.html">
-<div class="listing-date">
-Apr 3, 2022
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1647759600000" data-listing-file-modified-sort="1722232572707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/2022-03-20-utijaore/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2022-03-20-utijaore/index.html">
-<h3 class="no-anchor listing-title">
-Utija’ore ñamʉ chʉ’ʉ
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>I am reading (in Koreguaje)</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2022-03-20-utijaore/index.html">
-<div class="listing-date">
-Mar 20, 2022
-</div>
-<div class="listing-reading-time">
-2 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1617519600000" data-listing-file-modified-sort="1722232572704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/2021-04-04-luganda-finetune/index.html"> <p class="card-img-top"><img src="posts\2021-04-04-luganda-finetune\colab.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2021-04-04-luganda-finetune/index.html">
-<h3 class="no-anchor listing-title">
-Wav2Vec2 Luganda
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>It is getting possible to build a decent speech recognition system with remarkably little transcribed data.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2021-04-04-luganda-finetune/index.html">
-<div class="listing-date">
-Apr 4, 2021
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1604214000000" data-listing-file-modified-sort="1722232692953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12">
-<div class="thumbnail">
-<p><a href="./posts/2020-11-01-feel-old/index.html"> <p class="card-img-top"><img src="posts\2020-11-01-feel-old\0_twitter_clip.jpg"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2020-11-01-feel-old/index.html">
-<h3 class="no-anchor listing-title">
-Want to feel old?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>History has changed so much and yet it is still here with us</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2020-11-01-feel-old/index.html">
-<div class="listing-date">
-Nov 1, 2020
-</div>
-<div class="listing-reading-time">
-12 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
