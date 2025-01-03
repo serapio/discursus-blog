@@ -2,6 +2,10 @@
 date: 2025-01-03
 description: Expect the role of machine learning in your system to change, as the system matures
 title: Keep knowing why ML (Timeless ML Principles 2)
+categories:
+  - TMLP
+  - ML
+  - frogs
 ---
 
 This is the second post in a series about the ways that machine learning (ML) has not changed. (The first post is [here](../2024-12-11-ml-principles/index.qmd).) Not that it is the same in every way, but that key principles from classical ML are still important today. This one is a bit of a koan: the thing that has not changed is that you should expect change, understanding it terms of ML's purpose in your system.

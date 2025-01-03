@@ -2,6 +2,11 @@
 date: 2024-12-11
 description: Machine learning is about evaluation, first and foremost and through to the end
 title: Machine learning is evaluation all the way down (Timeless ML Principles 1)
+categories:
+  - TMLP
+  - ML
+  - evaluation
+  - turtles
 ---
 
 This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today.
