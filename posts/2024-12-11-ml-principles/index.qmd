@@ -1,7 +1,7 @@
 ---
 date: 2024-12-11
 description: Machine learning is about evaluation, first and foremost and through to the end
-title: Machine Learning is Evaluation All the Way Down
+title: Machine learning is evaluation all the way down (Timeless ML Principles 1)
 ---
 
 This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today.
@@ -18,7 +18,7 @@ The bottom turtle might be extrinsic evaluation, meaning evaluation from the out
 
 ## Training is evaluation
 
-And the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.
+And the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective loss function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.
 
 [![A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)](turtle_on_stone.jpg){fig-alt="One small turtle on top of various other turtles" fig-align="left" width="400"}](https://foto.wuestenigel.com/turtle-on-a-stone/)
 
