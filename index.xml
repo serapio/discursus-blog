@@ -10,7 +10,97 @@
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 03 Jan 2025 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 12 Jan 2025 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Know your data, but keep test data unseen (Timeless ML Principles 3)</title>
+  <dc:creator>Lucien Carroll</dc:creator>
+  <link>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In previous posts in the <a href="../../index.html#category=TMLP">TMLP series</a>, I have described what an ML system/data developer should learn from <a href="../../posts/2024-12-11-ml-principles/index.html">turtles</a> and <a href="../../posts/2025-01-03-ml-change/index.html">tadpoles</a>. This post describes what developers should learn from moray eels.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg"><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/moray-jaws.png" class="img-fluid figure-img" alt="pharyngeal jaws of moray eels" width="512"></a></p>
+<figcaption class="figure-caption">Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)</figcaption>
+</figure>
+</div>
+<section id="thats-a-moray" class="level2">
+<h2 class="anchored" data-anchor-id="thats-a-moray">That’s a moray</h2>
+<p>As an anonymous poet has said:</p>
+<blockquote class="blockquote">
+<p>When an eel has a maw<br>
+with a pharyngeal jaw,<br>
+that’s a moray.<br>
+When the jaws open wide<br>
+and there’s more jaws inside,<br>
+that’s a moray.</p>
+</blockquote>
+<p>As you feed the turtles in your ML system, you want to balance your data like a moray’s teeth: there are some teeth you see and some teeth you don’t. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-teeth.gif" class="img-fluid figure-img" alt="Moray peaks out of a hole, slightly opening its mouth" width="256"></p>
+<figcaption class="figure-caption">Moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-data-you-know" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-you-know">The data you know</h2>
+<p>There are many benefits that come from knowing your data in detail:</p>
+<ol type="1">
+<li>Understanding complexity of the task: Through close inspection of individual examples as well as exploratory descriptive statistics, you can develop better intuitions about what factors matter, what cases count as important or negligible, and what the scope of the problem is</li>
+<li>Surprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.</li>
+<li>Divergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody “cleaned up” your data in a way that left strange artifacts, or maybe the data hasn’t been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-yawn.gif" class="img-fluid figure-img" alt="Moray in crevasse opens its mouth wide" width="512"></p>
+<figcaption class="figure-caption">With big stretch, moray shows whole body and maw (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-data-you-dont" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-you-dont">The data you don’t</h2>
+<p>But the opposing force is that the more you directly use knowledge of the data to improve the system, the worse that data functions as an estimate of or proxy for the data in the next layer in your turtle stack. The more familiar framing of this principle is “don’t train on your test data”, but the hazard is more general.</p>
+<ul>
+<li><p>You indeed do need to be careful not to copy examples from the test data into your training data, and avoid having the same random grouping variables (such as speakers in a speech dataset or queries in a question-answering dataset), if you want your system to generalize to new random groups.</p></li>
+<li><p>You also need to watch out for data leaking across individual evaluation layers, such as doing detailed error analysis on all of your test data or setting your model training hyper-parameters based on your component/task test data. In the new prompted LLM paradigm, this could be using examples from your development data as few-shot examples in the prompt, or optimizing your prompt based on your test data.</p></li>
+</ul>
+<p>Your goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system’s evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You’re making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/hiding.gif" class="img-fluid figure-img" alt="A moray peaks its head out from a hole, with coral and fish around it" width="256"></p>
+<figcaption class="figure-caption">Moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-to-keep-your-smile" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-keep-your-smile">How to keep your smile</h2>
+<p>This is in some sense unavoidable, because evaluation is essential to improving the system, and evaluation bleeds the novelty from the test data. But you can limit that effect while gaining value from evaluations by doing things like:</p>
+<ul>
+<li><p>keeping the details of your best test data known only to the annotators, so that information is shared about the task scope and labeling guidelines, while the overall evaluation scores remind you to stay humble</p></li>
+<li><p>keeping matched dev and test sets split from the same distribution, and only use the dev set for things like error analysis and hyper-parameter tuning, as the divergence in scores between the dev and test sets will indicate how much the dev data has been exhausted</p></li>
+<li><p>do exploratory analysis of your dev and test sets together, to validate that they are indeed comparable and to understand how they differ from your other datasets, but when looking at particular examples, only look at dev data</p></li>
+<li><p>split collected live data by time (e.g.&nbsp;monthly), and use the most recent few blocks to curate test data, while using older blocks for dev data, so that your fresh test data continues to approximate live data</p></li>
+<li><p>when adding examples to a training set or an LLM prompt, only use collected/generated examples “inspired by” the examples from your error analysis, not examples that are the same or too similar</p></li>
+</ul>
+<p>By using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-reveal.gif" class="img-fluid figure-img" alt="A moray grabs a dead fish and pulls it back towards its hole"></p>
+<figcaption class="figure-caption">Moray reveals his whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</guid>
+  <pubDate>Sun, 12 Jan 2025 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Keep knowing why ML (Timeless ML Principles 2)</title>
   <dc:creator>Lucien Carroll</dc:creator>

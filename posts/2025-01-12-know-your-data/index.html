@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucien Carroll">
+<meta name="dcterms.date" content="2025-01-12">
+<meta name="description" content="Learn from the moray how to keep your smile">
+
+<title>Discursus - Know your data, but keep test data unseen (Timeless ML Principles 3)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Discursus</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/serapio" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lucien-carroll/" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@serapio" rel="me" target=""><i class="bi bi-mastodon" role="img" aria-label="Mastodon">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Know your data, but keep test data unseen (Timeless ML Principles 3)</h1>
+                  <div>
+        <div class="description">
+          Learn from the moray how to keep your smile
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lucien Carroll </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 12, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>In previous posts in the <a href="../../index.html#category=TMLP">TMLP series</a>, I have described what an ML system/data developer should learn from <a href="../../posts/2024-12-11-ml-principles/index.html">turtles</a> and <a href="../../posts/2025-01-03-ml-change/index.html">tadpoles</a>. This post describes what developers should learn from moray eels.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg"><img src="moray-jaws.png" class="img-fluid figure-img" alt="pharyngeal jaws of moray eels" width="512"></a></p>
+<figcaption class="figure-caption">Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)</figcaption>
+</figure>
+</div>
+<section id="thats-a-moray" class="level2">
+<h2 class="anchored" data-anchor-id="thats-a-moray">That’s a moray</h2>
+<p>As an anonymous poet has said:</p>
+<blockquote class="blockquote">
+<p>When an eel has a maw<br>
+with a pharyngeal jaw,<br>
+that’s a moray.<br>
+When the jaws open wide<br>
+and there’s more jaws inside,<br>
+that’s a moray.</p>
+</blockquote>
+<p>As you feed the turtles in your ML system, you want to balance your data like a moray’s teeth: there are some teeth you see and some teeth you don’t. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="big-teeth.gif" class="img-fluid figure-img" alt="Moray peaks out of a hole, slightly opening its mouth" width="256"></p>
+<figcaption class="figure-caption">Moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-data-you-know" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-you-know">The data you know</h2>
+<p>There are many benefits that come from knowing your data in detail:</p>
+<ol type="1">
+<li>Understanding complexity of the task: Through close inspection of individual examples as well as exploratory descriptive statistics, you can develop better intuitions about what factors matter, what cases count as important or negligible, and what the scope of the problem is</li>
+<li>Surprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.</li>
+<li>Divergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody “cleaned up” your data in a way that left strange artifacts, or maybe the data hasn’t been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="big-yawn.gif" class="img-fluid figure-img" alt="Moray in crevasse opens its mouth wide" width="512"></p>
+<figcaption class="figure-caption">With big stretch, moray shows whole body and maw (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-data-you-dont" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-you-dont">The data you don’t</h2>
+<p>But the opposing force is that the more you directly use knowledge of the data to improve the system, the worse that data functions as an estimate of or proxy for the data in the next layer in your turtle stack. The more familiar framing of this principle is “don’t train on your test data”, but the hazard is more general.</p>
+<ul>
+<li><p>You indeed do need to be careful not to copy examples from the test data into your training data, and avoid having the same random grouping variables (such as speakers in a speech dataset or queries in a question-answering dataset), if you want your system to generalize to new random groups.</p></li>
+<li><p>You also need to watch out for data leaking across individual evaluation layers, such as doing detailed error analysis on all of your test data or setting your model training hyper-parameters based on your component/task test data. In the new prompted LLM paradigm, this could be using examples from your development data as few-shot examples in the prompt, or optimizing your prompt based on your test data.</p></li>
+</ul>
+<p>Your goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system’s evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You’re making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hiding.gif" class="img-fluid figure-img" alt="A moray peaks its head out from a hole, with coral and fish around it" width="256"></p>
+<figcaption class="figure-caption">Moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-to-keep-your-smile" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-keep-your-smile">How to keep your smile</h2>
+<p>This is in some sense unavoidable, because evaluation is essential to improving the system, and evaluation bleeds the novelty from the test data. But you can limit that effect while gaining value from evaluations by doing things like:</p>
+<ul>
+<li><p>keeping the details of your best test data known only to the annotators, so that information is shared about the task scope and labeling guidelines, while the overall evaluation scores remind you to stay humble</p></li>
+<li><p>keeping matched dev and test sets split from the same distribution, and only use the dev set for things like error analysis and hyper-parameter tuning, as the divergence in scores between the dev and test sets will indicate how much the dev data has been exhausted</p></li>
+<li><p>do exploratory analysis of your dev and test sets together, to validate that they are indeed comparable and to understand how they differ from your other datasets, but when looking at particular examples, only look at dev data</p></li>
+<li><p>split collected live data by time (e.g.&nbsp;monthly), and use the most recent few blocks to curate test data, while using older blocks for dev data, so that your fresh test data continues to approximate live data</p></li>
+<li><p>when adding examples to a training set or an LLM prompt, only use collected/generated examples “inspired by” the examples from your error analysis, not examples that are the same or too similar</p></li>
+</ul>
+<p>By using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="big-reveal.gif" class="img-fluid figure-img" alt="A moray grabs a dead fish and pulls it back towards its hole"></p>
+<figcaption class="figure-caption">Moray reveals his whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
