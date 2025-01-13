@@ -21,7 +21,7 @@
 
 
 <p>In previous posts in the <a href="../../index.html#category=TMLP">TMLP series</a>, I have described what an ML system/data developer should learn from <a href="../../posts/2024-12-11-ml-principles/index.html">turtles</a> and <a href="../../posts/2025-01-03-ml-change/index.html">tadpoles</a>. This post describes what developers should learn from moray eels.</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><a href="https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg"><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/moray-jaws.png" class="img-fluid figure-img" alt="pharyngeal jaws of moray eels" width="512"></a></p>
 <figcaption class="figure-caption">Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)</figcaption>
@@ -29,7 +29,7 @@
 </div>
 <section id="thats-a-moray" class="level2">
 <h2 class="anchored" data-anchor-id="thats-a-moray">That’s a moray</h2>
-<p>As an anonymous poet has said:</p>
+<p>As an anonymous poet<sup>1</sup> has said:</p>
 <blockquote class="blockquote">
 <p>When an eel has a maw<br>
 with a pharyngeal jaw,<br>
@@ -39,10 +39,10 @@ and there’s more jaws inside,<br>
 that’s a moray.</p>
 </blockquote>
 <p>As you feed the turtles in your ML system, you want to balance your data like a moray’s teeth: there are some teeth you see and some teeth you don’t. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-teeth.gif" class="img-fluid figure-img" alt="Moray peaks out of a hole, slightly opening its mouth" width="256"></p>
-<figcaption class="figure-caption">Moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
+<figcaption class="figure-caption">A moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -54,10 +54,10 @@ that’s a moray.</p>
 <li>Surprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.</li>
 <li>Divergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody “cleaned up” your data in a way that left strange artifacts, or maybe the data hasn’t been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-yawn.gif" class="img-fluid figure-img" alt="Moray in crevasse opens its mouth wide" width="512"></p>
-<figcaption class="figure-caption">With big stretch, moray shows whole body and maw (image mine, CC-BY-4.0)</figcaption>
+<figcaption class="figure-caption">With big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -69,10 +69,10 @@ that’s a moray.</p>
 <li><p>You also need to watch out for data leaking across individual evaluation layers, such as doing detailed error analysis on all of your test data or setting your model training hyper-parameters based on your component/task test data. In the new prompted LLM paradigm, this could be using examples from your development data as few-shot examples in the prompt, or optimizing your prompt based on your test data.</p></li>
 </ul>
 <p>Your goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system’s evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You’re making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/hiding.gif" class="img-fluid figure-img" alt="A moray peaks its head out from a hole, with coral and fish around it" width="256"></p>
-<figcaption class="figure-caption">Moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
+<figcaption class="figure-caption">A moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -87,17 +87,27 @@ that’s a moray.</p>
 <li><p>when adding examples to a training set or an LLM prompt, only use collected/generated examples “inspired by” the examples from your error analysis, not examples that are the same or too similar</p></li>
 </ul>
 <p>By using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.</p>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-reveal.gif" class="img-fluid figure-img" alt="A moray grabs a dead fish and pulls it back towards its hole"></p>
-<figcaption class="figure-caption">Moray reveals his whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
+<figcaption class="figure-caption">A moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 
 
 </section>
 
- ]]></description>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>If you know the origin, please let me know. I have not been able to trace its source beyond instagram copypasta circa 2000.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>TMLP</category>
+  <category>morays</category>
+  <category>ML</category>
+  <category>evaluation</category>
   <guid>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</guid>
   <pubDate>Sun, 12 Jan 2025 08:00:00 GMT</pubDate>
 </item>
@@ -471,7 +481,7 @@ that’s a moray.</p>
 
  ]]></description>
   <category>languages</category>
-  <category>internationalization</category>
+  <category>localization</category>
   <guid>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</guid>
   <pubDate>Sun, 03 Apr 2022 07:00:00 GMT</pubDate>
 </item>
