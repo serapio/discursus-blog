@@ -4,7 +4,7 @@ description: English is a dominant default in NLP but it's not so special. The e
 title: English is a minority language too
 categories:
   - languages
-  - internationalization
+  - localization
 ---
 
 In California, [more than 1 out of 4 residents were born in another country](https://www.ppic.org/publication/immigrants-in-california/). In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, [about 3 out of 4](https://jointventure.org/images/stories/pdf/index2018.pdf). So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, [replaced by the second or third generation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526379/). Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don't use English in business life are switching to it.

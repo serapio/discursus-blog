@@ -2,15 +2,22 @@
 date: 2025-01-12
 description: Learn from the moray how to keep your smile
 title: Know your data, but keep test data unseen (Timeless ML Principles 3)
+categories:
+ - TMLP
+ - morays
+ - ML
+ - evaluation
 ---
 
 In previous posts in the [TMLP series](../../index.qmd#category=TMLP), I have described what an ML system/data developer should learn from [turtles](../2024-12-11-ml-principles/index.qmd) and [tadpoles](../2025-01-03-ml-change/index.qmd). This post describes what developers should learn from moray eels.
 
-[![Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)](moray-jaws.png){fig-alt="pharyngeal jaws of moray eels" width="512"}](https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg)
+[![Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)](moray-jaws.png){fig-alt="pharyngeal jaws of moray eels" fig-align="left" width="512"}](https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg)
 
 ## That's a moray
 
-As an anonymous poet has said:
+As an anonymous poet[^1] has said:
+
+[^1]: If you know the origin, please let me know. I have not been able to trace its source beyond instagram copypasta circa 2000.
 
 > When an eel has a maw\
 > with a pharyngeal jaw,\
@@ -21,7 +28,7 @@ As an anonymous poet has said:
 
 As you feed the turtles in your ML system, you want to balance your data like a moray's teeth: there are some teeth you see and some teeth you don't. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.
 
-![Moray shows its big front teeth (image mine, CC-BY-4.0)](big-teeth.gif){fig-alt="Moray peaks out of a hole, slightly opening its mouth" width="256"}
+![A moray shows its big front teeth (image mine, CC-BY-4.0)](big-teeth.gif){fig-alt="Moray peaks out of a hole, slightly opening its mouth" fig-align="left" width="256"}
 
 ## The data you know
 
@@ -31,7 +38,7 @@ There are many benefits that come from knowing your data in detail:
 2.  Surprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.
 3.  Divergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody "cleaned up" your data in a way that left strange artifacts, or maybe the data hasn't been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.
 
-![With big stretch, moray shows whole body and maw (image mine, CC-BY-4.0)](big-yawn.gif){fig-alt="Moray in crevasse opens its mouth wide" width="512"}
+![With big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)](big-yawn.gif){fig-alt="Moray in crevasse opens its mouth wide" fig-align="left" width="512"}
 
 ## The data you don't
 
@@ -43,7 +50,7 @@ But the opposing force is that the more you directly use knowledge of the data t
 
 Your goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system's evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You're making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.
 
-![Moray keeps itself hidden (image mine, CC-BY-4.0)](hiding.gif){fig-alt="A moray peaks its head out from a hole, with coral and fish around it" width="256"}
+![A moray keeps itself hidden (image mine, CC-BY-4.0)](hiding.gif){fig-alt="A moray peaks its head out from a hole, with coral and fish around it" fig-align="left" width="256"}
 
 ## How to keep your smile
 
@@ -61,4 +68,4 @@ This is in some sense unavoidable, because evaluation is essential to improving 
 
 By using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.
 
-![Moray reveals his whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)](big-reveal.gif){fig-alt="A moray grabs a dead fish and pulls it back towards its hole"}
+![A moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)](big-reveal.gif){fig-alt="A moray grabs a dead fish and pulls it back towards its hole" fig-align="left"}
