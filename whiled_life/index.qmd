@@ -1,0 +1,184 @@
+---
+title: "The Whiled Life"
+subtitle: Canine Wisdom for a Contemplative Life
+author: by Tom "Darkest Skye" Barker; illustrated by Du Silva Carroll
+format: revealjs
+---
+
+## {background-color="#C5BFB1"}
+
+![The Whiled Life: Canine Wisdom for Contemplative Life](images/whiled_life_cover.jpg)\
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 0](images/whiled-life-0.png)\
+
+![cover page. The While Life: Canine Wisdomm for a Contemplative Life, by Tom "Darkest Skye" Barker, illustrated by Du Silva Carroll](images/whiled-life-1.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+
+::: {#fig layout-ncol="2"}
+
+![copyright page. The Whiled Life: Canine Wisdom for Contemplative Life, by Tom "Darkest Skye" Barker, illustrated by Du Silva Carroll. Copyright Eduardo Silva Carroll and Lucien Carroll.](images/whiled-life-2.png)\
+
+![page 3](images/whiled-life-3.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+
+::: {#fig layout-ncol="2"}
+
+![page 4. Stay -- be still and wait; Contain the thrilling suspense; Urgent self-control.](images/whiled-life-4.png)\
+
+![page 5](images/whiled-life-5.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+
+::: {#fig layout-ncol="2"}
+
+![page 6. Where is my dearest; Here are we awaiting her; Pray she is not lost.](images/whiled-life-6.png)\
+
+![page 7](images/whiled-life-7.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+
+::: {#fig layout-ncol="2"}
+
+![page 8. The terrible things; are ephemeral phases; Surprise treats are true.](images/whiled-life-8.png)\
+
+![page 9](images/whiled-life-9.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 10. On mornings like this; I feel there must be more but; I just can't even.](images/whiled-life-10.png)\
+
+![page 11. Daylight tumbles scare; Squint and imagine the worst; Into the darkness.](images/whiled-life-11.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 12](images/whiled-life-12.png)\
+
+![page 13. Every window; And footpath are passageways; To understanding.](images/whiled-life-13.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 14. Still I wonder at; How effortlessly the clouds; Can climb Mount Fuji.](images/whiled-life-14.png)\
+
+![page 15](images/whiled-life-15.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 16. Let me write for you; An important prescription; Moar rest in sunshine.](images/whiled-life-16.png)\
+
+![page 17. Don't doubt the sunshine; Nor ask the wind why it blows; They are as are you.](images/whiled-life-17.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 18](images/whiled-life-18.png)\
+
+![page 19. I have perfected; The odor of fallen leaves; I have peed on them.](images/whiled-life-19.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 20. Sniffing makes the scent; Look ahead and it's a view; Steps become a path.](images/whiled-life-20.png)\
+
+![page 21](images/whiled-life-21.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 22. Flocks of dinosaurs; Past the sunset of their age; Fishing in low tide.](images/whiled-life-22.png)\
+
+![page 23](images/whiled-life-23.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 24. Dusk intermission; In the avian symphony; Interstitial pause.](images/whiled-life-24.png)\
+
+![page 25. Distant seagull splash; Cricket chirrup heron step; Pebble tumble breeze.](images/whiled-life-25.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 26](images/whiled-life-26.png)\
+
+![page 27. Whiling away hours; Seize your best life doggedly; Living the whiled life.](images/whiled-life-27.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 28. Forget adventures; Let's just stay indoors and nap; It's too frickin cold.](images/whiled-life-28.png)\
+
+![page 29](images/whiled-life-29.png)\
+
+:::
+
+## {background-color="#1A1A1A"}
+
+::: {#fig layout-ncol="2"}
+
+![page 30. Kindly let me sleep; To sleep perchance to dream, or; Where's my belly rub.](images/whiled-life-30.png)\
+
+![page 31](images/whiled-life-31.png)\
+
+:::
+
+## {background-color="#C5BFB1"}
+
+::: {#fig layout-ncol="2"}
+
+![page 32](images/whiled-life-32.png)\
+
+![page 33](images/whiled-life-0.png)\
+
+:::
