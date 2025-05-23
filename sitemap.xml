@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</loc>
-    <lastmod>2025-01-13T03:57:20.684Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</loc>
-    <lastmod>2025-01-13T03:57:18.313Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</loc>
-    <lastmod>2025-01-13T03:57:15.636Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</loc>
-    <lastmod>2025-01-13T03:57:13.707Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/about.html</loc>
-    <lastmod>2025-01-13T03:57:08.970Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/index.html</loc>
-    <lastmod>2025-01-13T03:57:11.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</loc>
-    <lastmod>2025-01-13T03:57:14.736Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</loc>
-    <lastmod>2025-01-13T03:57:17.172Z</lastmod>
+    <loc>https://blog.discurs.us/whiled_life/index.html</loc>
+    <lastmod>2025-05-23T17:41:52.266Z</lastmod>
   </url>
   <url>
     <loc>https://blog.discurs.us/posts/2025-01-03-ml-change/index.html</loc>
-    <lastmod>2025-01-13T03:57:19.399Z</lastmod>
+    <lastmod>2025-05-23T17:41:49.956Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</loc>
+    <lastmod>2025-05-23T17:41:48.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</loc>
+    <lastmod>2025-05-23T17:41:46.227Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/index.html</loc>
+    <lastmod>2025-05-23T17:41:43.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/about.html</loc>
+    <lastmod>2025-05-23T17:41:41.543Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</loc>
+    <lastmod>2025-05-23T17:41:45.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</loc>
+    <lastmod>2025-05-23T17:41:47.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</loc>
+    <lastmod>2025-05-23T17:41:49.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</loc>
+    <lastmod>2025-05-23T17:41:50.994Z</lastmod>
   </url>
 </urlset>
