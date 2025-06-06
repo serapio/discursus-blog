@@ -2,7 +2,9 @@
 title: Laundry days
 description: Cleaning up the AI mess we've made
 date: 2025-06-02
-category: NLP, evaluation
+categories:
+ - NLP
+ - evaluation
 ---
 
 I've spent the past four weeks off from work, primarily to sort out some complex feelings about the industry that I've made my career in. The tech industry, and the "AI" industry in particular, have earned widespread distrust for aiding the destruction of our economies, politics, and cultures.
@@ -25,7 +27,7 @@ I did not get as far into my reading list as I had hoped. We are fortunate to ha
 
     -   Building trust will require more reliability and transparency, through a more thorough [science of system testing and evaluation](https://substack.com/home/post/p-164033413).
 
-2.  But key harms of the AI industry come from its [concentrated power and political ideology](https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250602_AINowLandscapeReport_Full.pdf).
+2.  But key harms of the "AI" industry come from its [concentrated power and political ideology](https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250602_AINowLandscapeReport_Full.pdf).
 
     -   These harms can only be addressed by requiring more distributed power and accountability, through [open standards and adversarial interoperability](https://bookshop.org/p/books/the-internet-con-how-to-seize-the-means-of-computation-cory-doctorow/18771891), [building solidarity across stakeholder communities](https://academic.oup.com/policy-press-scholarship-online/book/45148), and policies that support open societies and reinforce human rights [in the data supply chain](https://partnershiponai.org/ai-and-human-rights-protecting-data-workers/) and [in the deployed context](https://thenewpress.org/books/the-walls-have-eyes/).
 
