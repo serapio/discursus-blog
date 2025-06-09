@@ -1,0 +1,25 @@
+---
+title: Tom "Darkest Skye" Barker
+description: Commemorating a good boy
+date: 2025-06-08
+categories:
+ - poetry
+ - dogs
+include-before-body:
+  text: |
+    <script async defer src="https://pixelfed.social/embed.js"></script>
+---
+
+![Tom](tom-bridge.jpg){fig-align="left" width="540"}
+
+My dog Tom passed a year ago this week. He had heart failure that came on pretty quickly. We adopted him 8.5 years before, to keep Jerry company, and he kept us company too. We don't know how old he was, but the white patch on his chin grew quite a bit in the last couple years.
+
+His life's work was to remind us to enjoy the simple things, like sunshine and wind in your hair, bread crusts found in the grass, afternoon naps, smelly leaves, and neighbor dogs. He condensed this wisdom into an Instagram poetry feed, which became a physical book during the pandemic. I've exported the Insta into [a pixelfed account](https://pixelfed.social/serapio).
+
+<iframe title="Pixelfed Profile Embed" src="https://pixelfed.social/serapio/embed" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen">
+
+</iframe>
+
+And I've converted the poetry book into [a slide show e-book](../../whiled_life). If you'd like to honor him, please take a good nap this week.
+
+[![The Whiled Life](../../whiled_life/images/whiled_life_cover.jpg){fig-align="left" width="680"}](../../whiled_life)
