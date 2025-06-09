@@ -10,7 +10,43 @@
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 02 Jun 2025 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 08 Jun 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Tom “Darkest Skye” Barker</title>
+  <dc:creator>Lucien Carroll</dc:creator>
+  <link>https://blog.discurs.us/posts/2025-06-08-whiled-life/index.html</link>
+  <description><![CDATA[ 
+<script async="" defer="" src="https://pixelfed.social/embed.js"></script>
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blog.discurs.us/posts/2025-06-08-whiled-life/tom-bridge.jpg" class="img-fluid figure-img" width="540"></p>
+<figcaption class="figure-caption">Tom</figcaption>
+</figure>
+</div>
+<p>My dog Tom passed a year ago this week. He had heart failure that came on pretty quickly. We adopted him 8.5 years before, to keep Jerry company, and he kept us company too. We don’t know how old he was, but the white patch on his chin grew quite a bit in the last couple years.</p>
+<p>His life’s work was to remind us to enjoy the simple things, like sunshine and wind in your hair, bread crusts found in the grass, afternoon naps, smelly leaves, and neighbor dogs. He condensed this wisdom into an Instagram poetry feed, which became a physical book during the pandemic. I’ve exported the Insta into <a href="https://pixelfed.social/serapio">a pixelfed account</a>.</p>
+<iframe title="Pixelfed Profile Embed" src="https://pixelfed.social/serapio/embed" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen">
+</iframe>
+<p>And I’ve converted the poetry book into <a href="../../whiled_life">a slide show e-book</a>. If you’d like to honor him, please take a good nap this week.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../whiled_life"><img src="https://blog.discurs.us/whiled_life/images/whiled_life_cover.jpg" class="img-fluid figure-img" width="680"></a></p>
+<figcaption class="figure-caption">The Whiled Life</figcaption>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>poetry</category>
+  <category>dogs</category>
+  <guid>https://blog.discurs.us/posts/2025-06-08-whiled-life/index.html</guid>
+  <pubDate>Sun, 08 Jun 2025 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Laundry days</title>
   <dc:creator>Lucien Carroll</dc:creator>

@@ -1,87 +1,115 @@
 [
   {
-    "objectID": "posts/2025-01-12-know-your-data/index.html",
-    "href": "posts/2025-01-12-know-your-data/index.html",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "objectID": "posts/2025-06-02-laundry/index.html",
+    "href": "posts/2025-06-02-laundry/index.html",
+    "title": "Laundry days",
     "section": "",
-    "text": "In previous posts in the TMLP series, I have described what an ML system/data developer should learn from turtles and tadpoles. This post describes what developers should learn from moray eels."
+    "text": "I’ve spent the past four weeks off from work, primarily to sort out some complex feelings about the industry that I’ve made my career in. The tech industry, and the “AI” industry in particular, have earned widespread distrust for aiding the destruction of our economies, politics, and cultures.\nWhen I was a kid, one of my father’s favorite aphorisms was:\n\nWhen you don’t know what to do, do the laundry.\n\nIt was much more than a trite excuse to get us to do chores — I know of three kinds of benefits of following this advice. One is that there is a cognitive coordination of working through a difficult problem while pulling pieces of clothing out of the pile, and hanging them on a line or folding and stacking them neatly. The physical manipulations warm up the mental circuits to pull pieces out of a knotty problem, turn them over and reshape them, and organize a new mental model. Another benefit is along the lines of\n\nfill the unforgiving minute with sixty seconds’ worth of distance run.\n\nReclaiming fractional time from pointless anxiety by doing something that will be beneficial regardless of your bigger goals. And finally, there is a therapeutic self care benefit, of clearing away the physical mess, of setting aside minor things that pull at your attention, so that you can build up the reserve of attention, time, and clean clothing to tackle crucial problems. I did a normal amount of laundry last month, but I spent many hours cleaning up garages, finished several paperwork chores, visited out-of-town family, exercised almost every day, and got quite a few great naps.\n\n\n\nPaddling\n\n\nI did not get as far into my reading list as I had hoped. We are fortunate to have an abundance of thoughtful tech criticism coming out, and the gist of it can be cribbed from podcasts, but I think these issues deserve more time and attention than we have in our usual daily lives. I hope to do appropriate book reviews as I finish them this summer, but in case I don’t make it that far, I will try to summarize my current understanding:\n\nThese new technologies are “normal technology”, and so the limiting factor for practical use will be managing control and building trust around the wide variety of failure modes in any particular application context.\n\nBuilding trust will require more reliability and transparency, through a more thorough science of system testing and evaluation.\n\nBut key harms of the “AI” industry come from its concentrated power and political ideology.\n\nThese harms can only be addressed by requiring more distributed power and accountability, through open standards and adversarial interoperability, building solidarity across stakeholder communities, and policies that support open societies and reinforce human rights in the data supply chain and in the deployed context.\n\n\nI think it’s past time for us to clean house, to take a hard look at how the technologies that we are building are wielded by the powerful, and to work new strategies to create a healthy world for everyone.\n\n\n\nSalvia"
   },
   {
-    "objectID": "posts/2025-01-12-know-your-data/index.html#thats-a-moray",
-    "href": "posts/2025-01-12-know-your-data/index.html#thats-a-moray",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
-    "section": "That’s a moray",
-    "text": "That’s a moray\nAs an anonymous poet1 has said:\n\nWhen an eel has a maw\nwith a pharyngeal jaw,\nthat’s a moray.\nWhen the jaws open wide\nand there’s more jaws inside,\nthat’s a moray.\n\nAs you feed the turtles in your ML system, you want to balance your data like a moray’s teeth: there are some teeth you see and some teeth you don’t. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.\n\n\n\nA moray shows its big front teeth (image mine, CC-BY-4.0)"
-  },
-  {
-    "objectID": "posts/2025-01-12-know-your-data/index.html#the-data-you-know",
-    "href": "posts/2025-01-12-know-your-data/index.html#the-data-you-know",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
-    "section": "The data you know",
-    "text": "The data you know\nThere are many benefits that come from knowing your data in detail:\n\nUnderstanding complexity of the task: Through close inspection of individual examples as well as exploratory descriptive statistics, you can develop better intuitions about what factors matter, what cases count as important or negligible, and what the scope of the problem is\nSurprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.\nDivergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody “cleaned up” your data in a way that left strange artifacts, or maybe the data hasn’t been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.\n\n\n\n\nWith big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)"
-  },
-  {
-    "objectID": "posts/2025-01-12-know-your-data/index.html#the-data-you-dont",
-    "href": "posts/2025-01-12-know-your-data/index.html#the-data-you-dont",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
-    "section": "The data you don’t",
-    "text": "The data you don’t\nBut the opposing force is that the more you directly use knowledge of the data to improve the system, the worse that data functions as an estimate of or proxy for the data in the next layer in your turtle stack. The more familiar framing of this principle is “don’t train on your test data”, but the hazard is more general.\n\nYou indeed do need to be careful not to copy examples from the test data into your training data, and avoid having the same random grouping variables (such as speakers in a speech dataset or queries in a question-answering dataset), if you want your system to generalize to new random groups.\nYou also need to watch out for data leaking across individual evaluation layers, such as doing detailed error analysis on all of your test data or setting your model training hyper-parameters based on your component/task test data. In the new prompted LLM paradigm, this could be using examples from your development data as few-shot examples in the prompt, or optimizing your prompt based on your test data.\n\nYour goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system’s evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You’re making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.\n\n\n\nA moray keeps itself hidden (image mine, CC-BY-4.0)"
-  },
-  {
-    "objectID": "posts/2025-01-12-know-your-data/index.html#how-to-keep-your-smile",
-    "href": "posts/2025-01-12-know-your-data/index.html#how-to-keep-your-smile",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
-    "section": "How to keep your smile",
-    "text": "How to keep your smile\nThis is in some sense unavoidable, because evaluation is essential to improving the system, and evaluation bleeds the novelty from the test data. But you can limit that effect while gaining value from evaluations by doing things like:\n\nkeeping the details of your best test data known only to the annotators, so that information is shared about the task scope and labeling guidelines, while the overall evaluation scores remind you to stay humble\nkeeping matched dev and test sets split from the same distribution, and only use the dev set for things like error analysis and hyper-parameter tuning, as the divergence in scores between the dev and test sets will indicate how much the dev data has been exhausted\ndo exploratory analysis of your dev and test sets together, to validate that they are indeed comparable and to understand how they differ from your other datasets, but when looking at particular examples, only look at dev data\nsplit collected live data by time (e.g. monthly), and use the most recent few blocks to curate test data, while using older blocks for dev data, so that your fresh test data continues to approximate live data\nwhen adding examples to a training set or an LLM prompt, only use collected/generated examples “inspired by” the examples from your error analysis, not examples that are the same or too similar\n\nBy using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.\n\n\n\nA moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)"
-  },
-  {
-    "objectID": "posts/2025-01-12-know-your-data/index.html#footnotes",
-    "href": "posts/2025-01-12-know-your-data/index.html#footnotes",
-    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nIf you know the origin, please let me know. I have not been able to trace its source beyond instagram copypasta circa 2000.↩︎"
-  },
-  {
-    "objectID": "posts/2024-12-11-ml-principles/index.html",
-    "href": "posts/2024-12-11-ml-principles/index.html",
-    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
+    "objectID": "posts/2025-01-03-ml-change/index.html",
+    "href": "posts/2025-01-03-ml-change/index.html",
+    "title": "Keep knowing why ML (Timeless ML Principles 2)",
     "section": "",
-    "text": "This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today."
+    "text": "This is the second post in a series about the ways that machine learning (ML) has not changed. (The first post is here.) Not that it is the same in every way, but that key principles from classical ML are still important today. This one is a bit of a koan: the thing that has not changed is that you should expect change, understanding it in terms of ML’s purpose in your system."
   },
   {
-    "objectID": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
-    "href": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
-    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
-    "section": "It’s all evaluation",
-    "text": "It’s all evaluation\nThe first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it’s evaluation.\n\n\n\nA tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)"
+    "objectID": "posts/2025-01-03-ml-change/index.html#know-why-ml-is-involved",
+    "href": "posts/2025-01-03-ml-change/index.html#know-why-ml-is-involved",
+    "title": "Keep knowing why ML (Timeless ML Principles 2)",
+    "section": "Know why ML is involved",
+    "text": "Know why ML is involved\nWhen developing a product feature based on machine learning, it’s important to remember that it is a product feature first, then a software system that provides that feature, and finally an ML-based system. The primary goal—its reason for existence—is that it is doing something useful for your end users, in the socio-technical context of everything else your users are using, understanding, and doing. Some software system is necessary to deliver that feature, but it might not be necessary to use any ML model at all, especially in the larval stages of exploratory user research and system prototyping, or in baseline systems used for software testing, system evaluation, and data development. If models are necessary, they are just parts in that software system body, and it might not be the same class of model as you would use at a different stage for another purpose.\n\n\n\nA tadpole prototyping some legs (photo CC-ND the1pony “Legs. I has them.”)"
   },
   {
-    "objectID": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
-    "href": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
-    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
-    "section": "The foundation is evaluation",
-    "text": "The foundation is evaluation\nThe bottom turtle might be extrinsic evaluation, meaning evaluation from the outside for the purpose that the whole system is for. You need your data to be ecologically valid, comparable to data in the wild. And you need your metrics to be closely aligned with product objectives. If your system has already been unleashed in the wild, your bottom turtle might even be field testing or live metrics from regular usage. But for the sake of the privacy and safety of your users, you probably can’t or shouldn’t measure live usage in as much detail as you can in offline testing. And you probably shouldn’t depend on users to explore your system’s worst behavior. But whatever data sources you have available, your foundational evaluations should be carefully informative of what your system is doing in the wild, and carefully aligned with product goals."
+    "objectID": "posts/2025-01-03-ml-change/index.html#a-system-has-many-parts-and-each-part-has-its-function",
+    "href": "posts/2025-01-03-ml-change/index.html#a-system-has-many-parts-and-each-part-has-its-function",
+    "title": "Keep knowing why ML (Timeless ML Principles 2)",
+    "section": "A system has many parts, and each part has its function",
+    "text": "A system has many parts, and each part has its function\nA function that you believe will need a big model or a custom model might be better satisfied by deterministic rules, a random function, or a much simpler model, while you are focusing development on the overall software system, including metrics that can guide you towards solving your users’ real needs. On the other hand, you might want to use a very large custom model or a complicated pipeline in a slow offline system that you use as a silver labeler in data development, as a teacher model for a smaller faster production model, or as a foil in system evaluation and error analysis. So think carefully about why you need ML in the system, and for each ML role in the system, consider what trade-offs are preferred among quality, latency, reliability, usability, etc.\n\n\n\nTadpole with compatible legs and tail (photo CC-ND the1pony “Smiling for the camera”)"
   },
   {
-    "objectID": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
-    "href": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
-    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
-    "section": "Training is evaluation",
-    "text": "Training is evaluation\nAnd the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective loss function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.\n\n\n\nA turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)"
+    "objectID": "posts/2025-01-03-ml-change/index.html#dont-let-the-tail-wag-the-frog",
+    "href": "posts/2025-01-03-ml-change/index.html#dont-let-the-tail-wag-the-frog",
+    "title": "Keep knowing why ML (Timeless ML Principles 2)",
+    "section": "Don’t let the tail wag the frog",
+    "text": "Don’t let the tail wag the frog\nA system with ML components requires additional considerations, beyond a deterministic system, but not instead of those. The non-deterministic components need their own evaluations, and the system as a whole needs end-to-end evaluation based on statistical design, beyond the end-to-end testing of logic and data formats. And resource planning and load testing will need to be tailored to the constraints of ML systems. But that is all on top of a foundation of good software development. Early exploratory user research and technical feasibility studies feed into careful designs, deterministic components are developed iteratively with classical testing, and feedback from software profiling, usability tests, and trials guide revisions to the system. But these adjustments to the architecture and development processes are for the sake of the product, for the users’ sake, not for the sake of machine learning as a goal, nor especially a particular class of model as a goal.\n\n\n\nFrog with a legacy tail (photo CC-ND the1pony “Frog on water hyacinth: this guy still has a small tail”)"
   },
   {
-    "objectID": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
-    "href": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
-    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
-    "section": "There is lots to evaluate",
-    "text": "There is lots to evaluate\nAnd in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.\n\n\n\nTwo turtle piles (photo CC-BY-ND-2.0 Nick Harris)\n\n\nIt is true that LLMs add a bit more complexity here, where it’s not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it’s all evaluation."
+    "objectID": "posts/2025-01-03-ml-change/index.html#the-only-constant-is-change",
+    "href": "posts/2025-01-03-ml-change/index.html#the-only-constant-is-change",
+    "title": "Keep knowing why ML (Timeless ML Principles 2)",
+    "section": "The only constant is change",
+    "text": "The only constant is change\nAs development progresses, the system will mature while your own understanding of the problem space matures, and your data development efforts expand and enrich your datasets. Besides the planned upgrades to models that have better quality/latency/cost profiles, you may well find that initial prototypes were focused on the wrong problem, or that you need to replace pipelines with end-to-end models for quality reasons, or replace end-to-end models with pipelines for the sake of reliabilty, speed or cost. You’ll need to find ways to adjust assumptions while allowing contrastive evaluations and error analysis.\n\n\n\nAn adult frog prepares for new changes (photo CC-ND the1pony “frog”)"
   },
   {
-    "objectID": "posts/2022-03-20-utijaore/index.html",
-    "href": "posts/2022-03-20-utijaore/index.html",
-    "title": "Utija’ore ñamʉ chʉ’ʉ",
+    "objectID": "posts/2022-04-03-english-minority-language/index.html",
+    "href": "posts/2022-04-03-english-minority-language/index.html",
+    "title": "English is a minority language too",
     "section": "",
-    "text": "For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through Ko’rehuajʉ chʉ’ore cutuñu over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:\n\n\n\nKoreguaje\nMixtec\nEnglish\n\n\n\n\nvʉ’e [wɨʔe]\nve’e [βeʔe]\nhouse\n\n\nchʉ’ʉ [tʃɨʔɨ]\nyu’u [ʒuʔu]\nme\n\n\njʉ̃jʉ̃ [hɨ̃hɨ̃]\njãjã [xãxã]\nyes\n\n\n\nBut if you look at larger lists of comparative vocabulary, for Otomanguean and Tucanoan, there are no such similarities. It seems that these few are coincidentally similar words, in similar sound systems."
+    "text": "In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 3 out of 4. So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, replaced by the second or third generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don’t use English in business life are switching to it.\nIt’s certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, English is often treated as unspoken default. However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
+    "title": "English is a minority language too",
+    "section": "A minority of economic activity",
+    "text": "A minority of economic activity\nIf you associate the GDP of each country or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:\n\n\n\nRank\nLanguage\nGDP($US Billions)\n% of World GDP\n\n\n\n\n1\nEnglish\n24.86\n29.59%\n\n\n2\nChinese\n14.73\n17.53%\n\n\n3\nJapanese\n5.15\n6.14%\n\n\n4\nGerman\n4.82\n5.74%\n\n\n5\nSpanish\n4.77\n5.67%\n\n\n6\nFrench\n3.41\n4.06%\n\n\n7\nArabic\n2.75\n3.27%\n\n\n8\nPortuguese\n2.08\n2.48%\n\n\n9\nItalian\n2.00\n2.38%\n\n\n10\nRussian\n1.87\n2.22%\n\n\n\nWith the caveat that not all economic activity in a country is carried out in the dominant language, but recognizing that most economic activity in Japan, for example, is carried out in Japanese, we can make some fair generalizations. Even though English is the language accounting for the most nominal GDP, it is approximately the same sum as the next three languages combined (Chinese, Japanese and German), and the top 10 languages here account for less than 80% of the global GDP."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
+    "title": "English is a minority language too",
+    "section": "A minority of technology users",
+    "text": "A minority of technology users\nSurveys of technology users similarly show a long fat tail of preferred languages. In the internet language survey results shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.\n\n\n\nRank\nLanguage\nUsers (millions)\n% of World Users\n\n\n\n\n1\nEnglish\n1186\n25.90%\n\n\n2\nChinese\n888\n19.40%\n\n\n3\nSpanish\n364\n7.90%\n\n\n4\nArabic\n237\n5.20%\n\n\n5\nPortuguese\n172\n3.70%\n\n\n6\nIndonesian\n198\n4.30%\n\n\n7\nFrench\n152\n3.30%\n\n\n8\nJapanese\n119\n2.60%\n\n\n9\nRussian\n116\n2.50%\n\n\n10\nGerman\n93\n2.00%\n\n\n\nIf you look at surveys of smartphone penetration per country and assign each population to just one language, Chinese jumps far into the lead, with English in second place."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
+    "title": "English is a minority language too",
+    "section": "A minority of internet content",
+    "text": "A minority of internet content\nA standard survey of website languages reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the Indicators of languages in the internet survey produce much lower estimates of the portion of internet content in English.\n\n\n\nRank\nLanguage\nContent\n\n\n\n\n1\nChinese\n21.60%\n\n\n2\nEnglish\n19.60%\n\n\n3\nSpanish\n7.85%\n\n\n4\nHindi\n3.76%\n\n\n5\nRussian\n3.76%\n\n\n6\nFrench\n3.33%\n\n\n7\nPortuguese\n3.13%\n\n\n8\nArabic\n3.09%\n\n\n9\nJapanese\n2.66%\n\n\n10\nGerman\n2.37%\n\n\n\nSo though English is the default language in many of the most visited websites, it has dropped into second place in overall internet content. As with other tables above, this distribution also has a long fat tail. The top ten languages here account for only 71% of the surveyed content."
+  },
+  {
+    "objectID": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "href": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
+    "title": "English is a minority language too",
+    "section": "Declining dominance",
+    "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
+  },
+  {
+    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
+    "href": "posts/2021-04-04-luganda-finetune/index.html",
+    "title": "Wav2Vec2 Luganda",
+    "section": "",
+    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lucien’s weblog",
+    "section": "",
+    "text": "Tom “Darkest Skye” Barker\n\n\n\n\n\n\n\npoetry\n\n\ndogs\n\n\n\n\nCommemorating a good boy\n\n\n\n\n\n\nJun 8, 2025\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nLaundry days\n\n\n\n\n\n\n\nNLP\n\n\nevaluation\n\n\n\n\nCleaning up the AI mess we’ve made\n\n\n\n\n\n\nJun 2, 2025\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nKnow your data, but keep test data unseen (Timeless ML Principles 3)\n\n\n\n\n\n\n\nTMLP\n\n\nmorays\n\n\nML\n\n\nevaluation\n\n\n\n\nLearn from the moray how to keep your smile\n\n\n\n\n\n\nJan 12, 2025\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nKeep knowing why ML (Timeless ML Principles 2)\n\n\n\n\n\n\n\nTMLP\n\n\nML\n\n\nfrogs\n\n\n\n\nExpect the role of machine learning in your system to change, as the system matures\n\n\n\n\n\n\nJan 3, 2025\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning is evaluation all the way down (Timeless ML Principles 1)\n\n\n\n\n\n\n\nTMLP\n\n\nML\n\n\nevaluation\n\n\nturtles\n\n\n\n\nMachine learning is about evaluation, first and foremost and through to the end\n\n\n\n\n\n\nDec 11, 2024\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nEnglish is a minority language too\n\n\n\n\n\n\n\nlanguages\n\n\nlocalization\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n9 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\n\n\nlanguages\n\n\nlinguistics\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\n\n\nlanguages\n\n\nspeech technology\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\n\n\nhistory\n\n\npolitics\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#an-epic-preamble",
+    "href": "about.html#an-epic-preamble",
+    "title": "About",
+    "section": "",
+    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+  },
+  {
+    "objectID": "about.html#me",
+    "href": "about.html#me",
+    "title": "About",
+    "section": "Me",
+    "text": "Me\nI am just a dog on the internet,\nwho wrote a book of poetry.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
   },
   {
     "objectID": "posts/2020-11-01-feel-old/index.html",
@@ -217,115 +245,94 @@
     "text": "History is still here with us\n\n\n\nWinfred J. Sanborn as a smiling old man\n\n\nTo be terribly unsubtle, here are some lessons I see:\n\nHistory has changed so much and yet it is still here with us. The children of my grandmothers’ generation–who were taught that it was a health risk to swim with Black kids and that Mexican American kids belong in Mexico, and shouldn’t marry each other–overcame enormous obstacles and their own prejudices to create the good old days of my generation’s childhood.\nThe arc of history that “bends towards justice” is loooong, and doesn’t bend on its own. People bend it.\nThe smart and nice people we often admire, who take centrist views on the issues of the day, are essential for a civil society, but they won’t be the leaders who bend history towards justice. Though they may well be the deciding vote when the tide changes.\nIf you, like me, are one of those people who like civil society, take a good hard look at what your positions will look like in 50 or 100 years. Use the influence you have to make history step lively towards justice.\nThe current levels of polarization and inequality are serious problems, but they can be fixed. We need to remind each other that we are on one team against the forces that threaten to destroy human society, find common ground, and work together like we are fighting a war–not with each other, but with poverty, climate change, dehumanization, etc.\nElections matter, but they are just the beginning. If you don’t like your options, make your favorite options happen. If you do like your options, don’t count on your heroes to do the right thing. They are human too, and may need some prodding from time to time.\nThis epidemic will pass. Eventually enough of us will be doing some combination of masking+distancing+testing+tracing that the uncontrolled spread will be stopped. Let’s get there ASAP, and don’t let racism and classism compound the problem. We are literally all in this together."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/2022-03-20-utijaore/index.html",
+    "href": "posts/2022-03-20-utijaore/index.html",
+    "title": "Utija’ore ñamʉ chʉ’ʉ",
     "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+    "text": "For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through Ko’rehuajʉ chʉ’ore cutuñu over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:\n\n\n\nKoreguaje\nMixtec\nEnglish\n\n\n\n\nvʉ’e [wɨʔe]\nve’e [βeʔe]\nhouse\n\n\nchʉ’ʉ [tʃɨʔɨ]\nyu’u [ʒuʔu]\nme\n\n\njʉ̃jʉ̃ [hɨ̃hɨ̃]\njãjã [xãxã]\nyes\n\n\n\nBut if you look at larger lists of comparative vocabulary, for Otomanguean and Tucanoan, there are no such similarities. It seems that these few are coincidentally similar words, in similar sound systems."
   },
   {
-    "objectID": "about.html#an-epic-preamble",
-    "href": "about.html#an-epic-preamble",
-    "title": "About",
+    "objectID": "posts/2024-12-11-ml-principles/index.html",
+    "href": "posts/2024-12-11-ml-principles/index.html",
+    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
     "section": "",
-    "text": "In the remote forgotten past,\nwhen world-wide-web standards were young,\nand the cyber-tubes were still cooling,\nidealists proclaimed that:\n\n“Information wants to be free”\n\nand connection would bring us together.\nPersonal websites would give every person a voice,\nfriend-of-a-friend files would establish trust,\nsyndication feeds would distribute the blessings,\nand the world would live as one.\nThat age expired before its dawning.\nVoices were captured in walled gardens,\nwhile the words of the profits are written\nout for copypasta stenciled in every margin,\nand chasing each of us across the pages.\n\nDisinformation wants to be free and ad-supported\n\nBut some who remember the old order,\ncontinued to practice the way of truth."
+    "text": "This is the first post in a series about the ways that evaluation in modern times, in the age of large language models, is still the same as in olden times. Not that it is the same in every way, but that key principles from classical machine learning evaluation are still important today."
   },
   {
-    "objectID": "about.html#me",
-    "href": "about.html#me",
-    "title": "About",
-    "section": "Me",
-    "text": "Me\nI am just a dog on the internet,\nwho wrote a book of poetry.\nThat is a lie, but you know\nwhat they say about sleeping dogs,\nand I am genuinely an expert napper.\nI am sometimes known as Lucien Carroll."
+    "objectID": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#its-all-evaluation",
+    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
+    "section": "It’s all evaluation",
+    "text": "It’s all evaluation\nThe first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it’s evaluation.\n\n\n\nA tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lucien’s weblog",
+    "objectID": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#the-foundation-is-evaluation",
+    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
+    "section": "The foundation is evaluation",
+    "text": "The foundation is evaluation\nThe bottom turtle might be extrinsic evaluation, meaning evaluation from the outside for the purpose that the whole system is for. You need your data to be ecologically valid, comparable to data in the wild. And you need your metrics to be closely aligned with product objectives. If your system has already been unleashed in the wild, your bottom turtle might even be field testing or live metrics from regular usage. But for the sake of the privacy and safety of your users, you probably can’t or shouldn’t measure live usage in as much detail as you can in offline testing. And you probably shouldn’t depend on users to explore your system’s worst behavior. But whatever data sources you have available, your foundational evaluations should be carefully informative of what your system is doing in the wild, and carefully aligned with product goals."
+  },
+  {
+    "objectID": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
+    "href": "posts/2024-12-11-ml-principles/index.html#training-is-evaluation",
+    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
+    "section": "Training is evaluation",
+    "text": "Training is evaluation\nAnd the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective loss function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.\n\n\n\nA turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)"
+  },
+  {
+    "objectID": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
+    "href": "posts/2024-12-11-ml-principles/index.html#there-is-lots-to-evaluate",
+    "title": "Machine learning is evaluation all the way down (Timeless ML Principles 1)",
+    "section": "There is lots to evaluate",
+    "text": "There is lots to evaluate\nAnd in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.\n\n\n\nTwo turtle piles (photo CC-BY-ND-2.0 Nick Harris)\n\n\nIt is true that LLMs add a bit more complexity here, where it’s not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it’s all evaluation."
+  },
+  {
+    "objectID": "posts/2025-01-12-know-your-data/index.html",
+    "href": "posts/2025-01-12-know-your-data/index.html",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
     "section": "",
-    "text": "Laundry days\n\n\n\n\n\n\n\nNLP\n\n\nevaluation\n\n\n\n\nCleaning up the AI mess we’ve made\n\n\n\n\n\n\nJun 2, 2025\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nKnow your data, but keep test data unseen (Timeless ML Principles 3)\n\n\n\n\n\n\n\nTMLP\n\n\nmorays\n\n\nML\n\n\nevaluation\n\n\n\n\nLearn from the moray how to keep your smile\n\n\n\n\n\n\nJan 12, 2025\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nKeep knowing why ML (Timeless ML Principles 2)\n\n\n\n\n\n\n\nTMLP\n\n\nML\n\n\nfrogs\n\n\n\n\nExpect the role of machine learning in your system to change, as the system matures\n\n\n\n\n\n\nJan 3, 2025\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nMachine learning is evaluation all the way down (Timeless ML Principles 1)\n\n\n\n\n\n\n\nTMLP\n\n\nML\n\n\nevaluation\n\n\nturtles\n\n\n\n\nMachine learning is about evaluation, first and foremost and through to the end\n\n\n\n\n\n\nDec 11, 2024\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nEnglish is a minority language too\n\n\n\n\n\n\n\nlanguages\n\n\nlocalization\n\n\n\n\nEnglish is a dominant default in NLP but it’s not so special. The economic value of localized language technology is large and growing.\n\n\n\n\n\n\nApr 3, 2022\n\n\n9 min\n\n\n\n\n\n\n  \n\n\n\n\nUtija’ore ñamʉ chʉ’ʉ\n\n\n\n\n\n\n\nlanguages\n\n\nlinguistics\n\n\n\n\nI am reading (in Koreguaje)\n\n\n\n\n\n\nMar 20, 2022\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nWav2Vec2 Luganda\n\n\n\n\n\n\n\nlanguages\n\n\nspeech technology\n\n\n\n\nIt is getting possible to build a decent speech recognition system with remarkably little transcribed data.\n\n\n\n\n\n\nApr 4, 2021\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nWant to feel old?\n\n\n\n\n\n\n\nhistory\n\n\npolitics\n\n\n\n\nHistory has changed so much and yet it is still here with us\n\n\n\n\n\n\nNov 1, 2020\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+    "text": "In previous posts in the TMLP series, I have described what an ML system/data developer should learn from turtles and tadpoles. This post describes what developers should learn from moray eels."
   },
   {
-    "objectID": "posts/2021-04-04-luganda-finetune/index.html",
-    "href": "posts/2021-04-04-luganda-finetune/index.html",
-    "title": "Wav2Vec2 Luganda",
+    "objectID": "posts/2025-01-12-know-your-data/index.html#thats-a-moray",
+    "href": "posts/2025-01-12-know-your-data/index.html#thats-a-moray",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "section": "That’s a moray",
+    "text": "That’s a moray\nAs an anonymous poet1 has said:\n\nWhen an eel has a maw\nwith a pharyngeal jaw,\nthat’s a moray.\nWhen the jaws open wide\nand there’s more jaws inside,\nthat’s a moray.\n\nAs you feed the turtles in your ML system, you want to balance your data like a moray’s teeth: there are some teeth you see and some teeth you don’t. Morays also usually do a good job of hiding their long bodies in a hole or crevasse, just showing their head with a sarcastic toothy smile.\n\n\n\nA moray shows its big front teeth (image mine, CC-BY-4.0)"
+  },
+  {
+    "objectID": "posts/2025-01-12-know-your-data/index.html#the-data-you-know",
+    "href": "posts/2025-01-12-know-your-data/index.html#the-data-you-know",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "section": "The data you know",
+    "text": "The data you know\nThere are many benefits that come from knowing your data in detail:\n\nUnderstanding complexity of the task: Through close inspection of individual examples as well as exploratory descriptive statistics, you can develop better intuitions about what factors matter, what cases count as important or negligible, and what the scope of the problem is\nSurprising failure modes: Data exploration will turn up problematic cases that you would not expect from just imagining the system, or that you might conflate with other cases without a deeper qualitative understanding. In a complete system, error analysis over a sample of usage can highlight the most important problems and identify what component in the system needs improvement.\nDivergence between datasets: Looking at data samples and exploratory analysis of datasets can reveal important differences between datasets, such as differences between training data and validation data, or differences between your curated test data and what you know about live usage data. These divergences could be different formatting, different pre-processing, or distribution shifts. Maybe somebody “cleaned up” your data in a way that left strange artifacts, or maybe the data hasn’t been cleaned up when you thought it was. Maybe one dataset is taking the whole system as the scope of its input and output, while another dataset was prepared for the scope of just one component, where the actual system would apply additional processing before the input or after the output.\n\n\n\n\nWith big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)"
+  },
+  {
+    "objectID": "posts/2025-01-12-know-your-data/index.html#the-data-you-dont",
+    "href": "posts/2025-01-12-know-your-data/index.html#the-data-you-dont",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "section": "The data you don’t",
+    "text": "The data you don’t\nBut the opposing force is that the more you directly use knowledge of the data to improve the system, the worse that data functions as an estimate of or proxy for the data in the next layer in your turtle stack. The more familiar framing of this principle is “don’t train on your test data”, but the hazard is more general.\n\nYou indeed do need to be careful not to copy examples from the test data into your training data, and avoid having the same random grouping variables (such as speakers in a speech dataset or queries in a question-answering dataset), if you want your system to generalize to new random groups.\nYou also need to watch out for data leaking across individual evaluation layers, such as doing detailed error analysis on all of your test data or setting your model training hyper-parameters based on your component/task test data. In the new prompted LLM paradigm, this could be using examples from your development data as few-shot examples in the prompt, or optimizing your prompt based on your test data.\n\nYour goal is to build a system that generalizes over the data you know well, and beyond the data you are using to evaluate, to new data appearing in your live system. When you use information about your test data to fix things in the system, you are improving your system’s evaluation score but over-fitting, lessening the value of your test data, as it is now a worse estimate of live data. You’re making the test data less like the live data, because it is now special to the system, in that there are elements or aspects of the test data that are essentially known to the system.\n\n\n\nA moray keeps itself hidden (image mine, CC-BY-4.0)"
+  },
+  {
+    "objectID": "posts/2025-01-12-know-your-data/index.html#how-to-keep-your-smile",
+    "href": "posts/2025-01-12-know-your-data/index.html#how-to-keep-your-smile",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "section": "How to keep your smile",
+    "text": "How to keep your smile\nThis is in some sense unavoidable, because evaluation is essential to improving the system, and evaluation bleeds the novelty from the test data. But you can limit that effect while gaining value from evaluations by doing things like:\n\nkeeping the details of your best test data known only to the annotators, so that information is shared about the task scope and labeling guidelines, while the overall evaluation scores remind you to stay humble\nkeeping matched dev and test sets split from the same distribution, and only use the dev set for things like error analysis and hyper-parameter tuning, as the divergence in scores between the dev and test sets will indicate how much the dev data has been exhausted\ndo exploratory analysis of your dev and test sets together, to validate that they are indeed comparable and to understand how they differ from your other datasets, but when looking at particular examples, only look at dev data\nsplit collected live data by time (e.g. monthly), and use the most recent few blocks to curate test data, while using older blocks for dev data, so that your fresh test data continues to approximate live data\nwhen adding examples to a training set or an LLM prompt, only use collected/generated examples “inspired by” the examples from your error analysis, not examples that are the same or too similar\n\nBy using strategies like this, you can learn plenty from your evaluations while keeping reasonable expectations about your system as deployed.\n\n\n\nA moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)"
+  },
+  {
+    "objectID": "posts/2025-01-12-know-your-data/index.html#footnotes",
+    "href": "posts/2025-01-12-know-your-data/index.html#footnotes",
+    "title": "Know your data, but keep test data unseen (Timeless ML Principles 3)",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIf you know the origin, please let me know. I have not been able to trace its source beyond instagram copypasta circa 2000.↩︎"
+  },
+  {
+    "objectID": "posts/2025-06-08-whiled-life/index.html",
+    "href": "posts/2025-06-08-whiled-life/index.html",
+    "title": "Tom “Darkest Skye” Barker",
     "section": "",
-    "text": "This is a PSA for folks with an audio corpus of a low resource language: it is getting possible to build a decent speech recognition system with remarkably little transcribed data. Take this into account next time you are discussing acceptable use of new recordings, and double check how community members feel about these possibilities.\n\n\n\nReference and predicted text sample\n\n\nOver the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e. people read sentences from public domain documents, and no separate text data was used for a language model), the resulting model reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output."
-  },
-  {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html",
-    "href": "posts/2022-04-03-english-minority-language/index.html",
-    "title": "English is a minority language too",
-    "section": "",
-    "text": "In California, more than 1 out of 4 residents were born in another country. In the San Francisco Bay Area, that number is about 1 in 3, and among tech workers in the area, about 3 out of 4. So in tech circles, dominated by Silicon Valley, English is treated as the majority and default language, and much exposure to languages beyond English positions those other languages as foreign, personal, or home languages. Even as home languages, they are losing ground to English, replaced by the second or third generation. Someone who works in Silicon Valley, USA might easily think that English overwhelmingly dominates the business world, and that people who don’t use English in business life are switching to it.\nIt’s certainly true that English does have a dominant position in the global economy and in the technology world. It is spoken as the most common home language and as a national language in three of the G7 countries, and it is used as the primary trade language among speakers of many other languages. In language technology, especially in NLP research, English is often treated as unspoken default. However, the dominance of English should not be exaggerated. English accounts for a minority of the global economy, a minority of technology users, and a minority of internet content. Moreover, the dominance of English is declining."
-  },
-  {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-economic-activity",
-    "title": "English is a minority language too",
-    "section": "A minority of economic activity",
-    "text": "A minority of economic activity\nIf you associate the GDP of each country or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:\n\n\n\nRank\nLanguage\nGDP($US Billions)\n% of World GDP\n\n\n\n\n1\nEnglish\n24.86\n29.59%\n\n\n2\nChinese\n14.73\n17.53%\n\n\n3\nJapanese\n5.15\n6.14%\n\n\n4\nGerman\n4.82\n5.74%\n\n\n5\nSpanish\n4.77\n5.67%\n\n\n6\nFrench\n3.41\n4.06%\n\n\n7\nArabic\n2.75\n3.27%\n\n\n8\nPortuguese\n2.08\n2.48%\n\n\n9\nItalian\n2.00\n2.38%\n\n\n10\nRussian\n1.87\n2.22%\n\n\n\nWith the caveat that not all economic activity in a country is carried out in the dominant language, but recognizing that most economic activity in Japan, for example, is carried out in Japanese, we can make some fair generalizations. Even though English is the language accounting for the most nominal GDP, it is approximately the same sum as the next three languages combined (Chinese, Japanese and German), and the top 10 languages here account for less than 80% of the global GDP."
-  },
-  {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-technology-users",
-    "title": "English is a minority language too",
-    "section": "A minority of technology users",
-    "text": "A minority of technology users\nSurveys of technology users similarly show a long fat tail of preferred languages. In the internet language survey results shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.\n\n\n\nRank\nLanguage\nUsers (millions)\n% of World Users\n\n\n\n\n1\nEnglish\n1186\n25.90%\n\n\n2\nChinese\n888\n19.40%\n\n\n3\nSpanish\n364\n7.90%\n\n\n4\nArabic\n237\n5.20%\n\n\n5\nPortuguese\n172\n3.70%\n\n\n6\nIndonesian\n198\n4.30%\n\n\n7\nFrench\n152\n3.30%\n\n\n8\nJapanese\n119\n2.60%\n\n\n9\nRussian\n116\n2.50%\n\n\n10\nGerman\n93\n2.00%\n\n\n\nIf you look at surveys of smartphone penetration per country and assign each population to just one language, Chinese jumps far into the lead, with English in second place."
-  },
-  {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
-    "href": "posts/2022-04-03-english-minority-language/index.html#a-minority-of-internet-content",
-    "title": "English is a minority language too",
-    "section": "A minority of internet content",
-    "text": "A minority of internet content\nA standard survey of website languages reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the Indicators of languages in the internet survey produce much lower estimates of the portion of internet content in English.\n\n\n\nRank\nLanguage\nContent\n\n\n\n\n1\nChinese\n21.60%\n\n\n2\nEnglish\n19.60%\n\n\n3\nSpanish\n7.85%\n\n\n4\nHindi\n3.76%\n\n\n5\nRussian\n3.76%\n\n\n6\nFrench\n3.33%\n\n\n7\nPortuguese\n3.13%\n\n\n8\nArabic\n3.09%\n\n\n9\nJapanese\n2.66%\n\n\n10\nGerman\n2.37%\n\n\n\nSo though English is the default language in many of the most visited websites, it has dropped into second place in overall internet content. As with other tables above, this distribution also has a long fat tail. The top ten languages here account for only 71% of the surveyed content."
-  },
-  {
-    "objectID": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
-    "href": "posts/2022-04-03-english-minority-language/index.html#declining-dominance",
-    "title": "English is a minority language too",
-    "section": "Declining dominance",
-    "text": "Declining dominance\nSince the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.\n\n\n\nGlobal GDP by region 2010 to 2019\n\n\nAll of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.\nFortunately, the cost of localized language technology is quickly falling, making it feasible to support more languages. But that is a topic for another post."
-  },
-  {
-    "objectID": "posts/2025-01-03-ml-change/index.html",
-    "href": "posts/2025-01-03-ml-change/index.html",
-    "title": "Keep knowing why ML (Timeless ML Principles 2)",
-    "section": "",
-    "text": "This is the second post in a series about the ways that machine learning (ML) has not changed. (The first post is here.) Not that it is the same in every way, but that key principles from classical ML are still important today. This one is a bit of a koan: the thing that has not changed is that you should expect change, understanding it in terms of ML’s purpose in your system."
-  },
-  {
-    "objectID": "posts/2025-01-03-ml-change/index.html#know-why-ml-is-involved",
-    "href": "posts/2025-01-03-ml-change/index.html#know-why-ml-is-involved",
-    "title": "Keep knowing why ML (Timeless ML Principles 2)",
-    "section": "Know why ML is involved",
-    "text": "Know why ML is involved\nWhen developing a product feature based on machine learning, it’s important to remember that it is a product feature first, then a software system that provides that feature, and finally an ML-based system. The primary goal—its reason for existence—is that it is doing something useful for your end users, in the socio-technical context of everything else your users are using, understanding, and doing. Some software system is necessary to deliver that feature, but it might not be necessary to use any ML model at all, especially in the larval stages of exploratory user research and system prototyping, or in baseline systems used for software testing, system evaluation, and data development. If models are necessary, they are just parts in that software system body, and it might not be the same class of model as you would use at a different stage for another purpose.\n\n\n\nA tadpole prototyping some legs (photo CC-ND the1pony “Legs. I has them.”)"
-  },
-  {
-    "objectID": "posts/2025-01-03-ml-change/index.html#a-system-has-many-parts-and-each-part-has-its-function",
-    "href": "posts/2025-01-03-ml-change/index.html#a-system-has-many-parts-and-each-part-has-its-function",
-    "title": "Keep knowing why ML (Timeless ML Principles 2)",
-    "section": "A system has many parts, and each part has its function",
-    "text": "A system has many parts, and each part has its function\nA function that you believe will need a big model or a custom model might be better satisfied by deterministic rules, a random function, or a much simpler model, while you are focusing development on the overall software system, including metrics that can guide you towards solving your users’ real needs. On the other hand, you might want to use a very large custom model or a complicated pipeline in a slow offline system that you use as a silver labeler in data development, as a teacher model for a smaller faster production model, or as a foil in system evaluation and error analysis. So think carefully about why you need ML in the system, and for each ML role in the system, consider what trade-offs are preferred among quality, latency, reliability, usability, etc.\n\n\n\nTadpole with compatible legs and tail (photo CC-ND the1pony “Smiling for the camera”)"
-  },
-  {
-    "objectID": "posts/2025-01-03-ml-change/index.html#dont-let-the-tail-wag-the-frog",
-    "href": "posts/2025-01-03-ml-change/index.html#dont-let-the-tail-wag-the-frog",
-    "title": "Keep knowing why ML (Timeless ML Principles 2)",
-    "section": "Don’t let the tail wag the frog",
-    "text": "Don’t let the tail wag the frog\nA system with ML components requires additional considerations, beyond a deterministic system, but not instead of those. The non-deterministic components need their own evaluations, and the system as a whole needs end-to-end evaluation based on statistical design, beyond the end-to-end testing of logic and data formats. And resource planning and load testing will need to be tailored to the constraints of ML systems. But that is all on top of a foundation of good software development. Early exploratory user research and technical feasibility studies feed into careful designs, deterministic components are developed iteratively with classical testing, and feedback from software profiling, usability tests, and trials guide revisions to the system. But these adjustments to the architecture and development processes are for the sake of the product, for the users’ sake, not for the sake of machine learning as a goal, nor especially a particular class of model as a goal.\n\n\n\nFrog with a legacy tail (photo CC-ND the1pony “Frog on water hyacinth: this guy still has a small tail”)"
-  },
-  {
-    "objectID": "posts/2025-01-03-ml-change/index.html#the-only-constant-is-change",
-    "href": "posts/2025-01-03-ml-change/index.html#the-only-constant-is-change",
-    "title": "Keep knowing why ML (Timeless ML Principles 2)",
-    "section": "The only constant is change",
-    "text": "The only constant is change\nAs development progresses, the system will mature while your own understanding of the problem space matures, and your data development efforts expand and enrich your datasets. Besides the planned upgrades to models that have better quality/latency/cost profiles, you may well find that initial prototypes were focused on the wrong problem, or that you need to replace pipelines with end-to-end models for quality reasons, or replace end-to-end models with pipelines for the sake of reliabilty, speed or cost. You’ll need to find ways to adjust assumptions while allowing contrastive evaluations and error analysis.\n\n\n\nAn adult frog prepares for new changes (photo CC-ND the1pony “frog”)"
-  },
-  {
-    "objectID": "posts/2025-06-02-laundry/index.html",
-    "href": "posts/2025-06-02-laundry/index.html",
-    "title": "Laundry days",
-    "section": "",
-    "text": "I’ve spent the past four weeks off from work, primarily to sort out some complex feelings about the industry that I’ve made my career in. The tech industry, and the “AI” industry in particular, have earned widespread distrust for aiding the destruction of our economies, politics, and cultures.\nWhen I was a kid, one of my father’s favorite aphorisms was:\n\nWhen you don’t know what to do, do the laundry.\n\nIt was much more than a trite excuse to get us to do chores — I know of three kinds of benefits of following this advice. One is that there is a cognitive coordination of working through a difficult problem while pulling pieces of clothing out of the pile, and hanging them on a line or folding and stacking them neatly. The physical manipulations warm up the mental circuits to pull pieces out of a knotty problem, turn them over and reshape them, and organize a new mental model. Another benefit is along the lines of\n\nfill the unforgiving minute with sixty seconds’ worth of distance run.\n\nReclaiming fractional time from pointless anxiety by doing something that will be beneficial regardless of your bigger goals. And finally, there is a therapeutic self care benefit, of clearing away the physical mess, of setting aside minor things that pull at your attention, so that you can build up the reserve of attention, time, and clean clothing to tackle crucial problems. I did a normal amount of laundry last month, but I spent many hours cleaning up garages, finished several paperwork chores, visited out-of-town family, exercised almost every day, and got quite a few great naps.\n\n\n\nPaddling\n\n\nI did not get as far into my reading list as I had hoped. We are fortunate to have an abundance of thoughtful tech criticism coming out, and the gist of it can be cribbed from podcasts, but I think these issues deserve more time and attention than we have in our usual daily lives. I hope to do appropriate book reviews as I finish them this summer, but in case I don’t make it that far, I will try to summarize my current understanding:\n\nThese new technologies are “normal technology”, and so the limiting factor for practical use will be managing control and building trust around the wide variety of failure modes in any particular application context.\n\nBuilding trust will require more reliability and transparency, through a more thorough science of system testing and evaluation.\n\nBut key harms of the “AI” industry come from its concentrated power and political ideology.\n\nThese harms can only be addressed by requiring more distributed power and accountability, through open standards and adversarial interoperability, building solidarity across stakeholder communities, and policies that support open societies and reinforce human rights in the data supply chain and in the deployed context.\n\n\nI think it’s past time for us to clean house, to take a hard look at how the technologies that we are building are wielded by the powerful, and to work new strategies to create a healthy world for everyone.\n\n\n\nSalvia"
+    "text": "Tom\n\n\nMy dog Tom passed a year ago this week. He had heart failure that came on pretty quickly. We adopted him 8.5 years before, to keep Jerry company, and he kept us company too. We don’t know how old he was, but the white patch on his chin grew quite a bit in the last couple years.\nHis life’s work was to remind us to enjoy the simple things, like sunshine and wind in your hair, bread crusts found in the grass, afternoon naps, smelly leaves, and neighbor dogs. He condensed this wisdom into an Instagram poetry feed, which became a physical book during the pandemic. I’ve exported the Insta into a pixelfed account.\n\n\nAnd I’ve converted the poetry book into a slide show e-book. If you’d like to honor him, please take a good nap this week.\n\n\n\nThe Whiled Life"
   }
 ]
