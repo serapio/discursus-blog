@@ -6,16 +6,53 @@
       version="2.0">
 <channel>
 <title>Discursus</title>
-<link>https://blog.discurs.us/index.html</link>
+<link>https://blog.discurs.us/</link>
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
-<generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 14 Nov 2025 08:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sun, 02 Aug 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Towards less corruptible cultural technologies</title>
+  <dc:creator>Lucien Carroll</dc:creator>
+  <link>https://blog.discurs.us/posts/2026-07-28-incorruptible/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>While on vacation in June, I found the time to read a book I had much anticipated: Eric Ries’ <em>Incorruptible</em>. It was a fascinating, hopeful, and thought-provoking read, but one key thought it has provoked is a personal beef with the title. He has commented in interviews that “Less corruptible” just doesn’t have the same ring to it, but I think that really would have been more appropriate.</p>
+<p>Eric Ries, most known as the author of <em>Lean Startup</em>, offers a diagnosis and remedy for the epidemic of companies that betray the trust of their customers and employees, corrupt the values and purpose established by the founders, and ultimately damage the long-term value of the company, just in order to capture short-term profits for shareholders. That by itself is a problem for all of us. Few of us are founders, and most of us are only small-time shareholders through our retirement accounts. But so many employers have betrayed their workers, and so many producers have betrayed their customers, that all of us have stories – favorite brands ruined by private equity, big tech companies that once prioritized user experience now act like slumlords, and so-called “purpose-driven” corporations that have only the slightest hesitation about sponsoring human rights abuses or hastening the destruction of our planet.</p>
+<p>Beyond that, I have become convinced that understanding company governance is a key angle of attack on re-establishing healthy internet governance and understanding governance of artificial intelligence. To start by stating the more obvious, late-stage capitalism is a fundamental cause of many of the harms associated with the current internet and with artificial intelligence. The enshittification of the internet is fundamentally springing from the technical ease of software user surveillance in a context of policies that have favored monopolies over the past 30 years. The rest of it is short-term profit maximization. Similarly, the artificial intelligence bubble is driven by FOMO on monopolizing whatever market transitions are caused by this technology change, and in this race, the big players have ignored others rights and known harms or decided to ask forgiveness rather than permission.</p>
+<p>But there is also a deeper reason that all of these are connected. Corporate bureaucracies, the internet, and large language models are all cultural technologies – systems that people have co-constructed, complex external representations of even more complex collective knowledge. Cultural technologies can facilitate information access, conceptual reorganization, and human coordination. But the simplification in these information systems also shifts our culture and cognition. And they can shift power – good governance can distribute power, establish healthy ecosystems, and enable human flourishing, while misgovernance can concentrate power and facilitate abuse, impunity, and <em>corruption.</em></p>
+<p>While reading <em>Incorruptible</em>, I was struck by how often the companies mentioned as examples of good governance with mission guardians were companies that I recognized from the news, from stories of betraying their own customers or employees, or backing down from their mission commitments. Even these lighthouse examples of “incorruptible” company structures were not immune from corruption.</p>
+<ul>
+<li><p>Novo Nordisk: Founded with the mission of making diabetes care accessible to all, its mission-lock structure has not prevented it from engaging in price gouging on insulin and weight-loss enzymes, or from participating in the deceptive marketing practices common in the pharmaceutical industry.</p></li>
+<li><p>Costco</p></li>
+<li><p>Anthropic</p></li>
+<li><p>Patagonia</p></li>
+<li><p>Ikea</p></li>
+<li><p>Johnson &amp; Johnson</p></li>
+<li><p>Duolingo</p></li>
+<li><p>gitlab</p></li>
+<li><p>google</p></li>
+<li><p>cloudflare</p></li>
+<li><p>rei</p></li>
+<li><p>sama</p></li>
+</ul>
+
+
+
+ ]]></description>
+  <guid>https://blog.discurs.us/posts/2026-07-28-incorruptible/</guid>
+  <pubDate>Sun, 02 Aug 2026 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Goodbye Cisco</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/index.html</link>
+  <link>https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -24,7 +61,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/images/cisco-badge.jpeg" class="img-fluid figure-img" alt="Photo of Lucien Carroll's badge, with a Cisco logo on a wall in the background"></p>
-<figcaption class="figure-caption">My badge</figcaption>
+<figcaption>My badge</figcaption>
 </figure>
 </div>
 <p>This was my first job out of grad school, and when I started, I could offer very little evidence that I could do anything very practical as a “Search Quality Engineer” at an “intelligent voice interfaces” startup.<sup>1</sup> I had no engineering degree, I hadn’t taken a computer science course in over a decade, and I had been in grad school since the year I got my first mobile phone. I had a masters thesis I never finished, and an unrelated PhD dissertation that I had not defended yet. I had never shared a git repo with anyone, and I didn’t know what a JSON format was.</p>
@@ -34,7 +71,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/images/IMG_0259.jpeg" class="img-fluid figure-img" alt="A photo of a line art design on a sweatshirt, showing the western hemisphere of the globe, composed of computer icons"></p>
-<figcaption class="figure-caption">Un Mundo Juntos / One World Together</figcaption>
+<figcaption>Un Mundo Juntos / One World Together</figcaption>
 </figure>
 </div>
 
@@ -48,15 +85,16 @@
 </ol>
 </section></div> ]]></description>
   <category>career</category>
-  <guid>https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2025-11-14-goodbye-cisco/</guid>
   <pubDate>Fri, 14 Nov 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Tom “Darkest Skye” Barker</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2025-06-08-whiled-life/index.html</link>
+  <link>https://blog.discurs.us/posts/2025-06-08-whiled-life/</link>
   <description><![CDATA[ 
 <script async="" defer="" src="https://pixelfed.social/embed.js"></script>
+
 
 
 
@@ -64,7 +102,7 @@
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-06-08-whiled-life/tom-bridge.jpg" class="img-fluid figure-img" width="540"></p>
-<figcaption class="figure-caption">Tom</figcaption>
+<figcaption>Tom</figcaption>
 </figure>
 </div>
 <p>My dog Tom passed a year ago this week. He had heart failure that came on pretty quickly. We adopted him 8.5 years before, to keep Jerry company, and he kept us company too. We don’t know how old he was, but the white patch on his chin grew quite a bit in the last couple years.</p>
@@ -74,8 +112,12 @@
 <p>And I’ve converted the poetry book into <a href="../../whiled_life">a slide show e-book</a>. If you’d like to honor him, please take a good nap this week.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="../../whiled_life"><img src="https://blog.discurs.us/whiled_life/images/whiled_life_cover.jpg" class="img-fluid figure-img" width="680"></a></p>
-<figcaption class="figure-caption">The Whiled Life</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../whiled_life"><img src="https://blog.discurs.us/whiled_life/images/whiled_life_cover.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" width="680"></a></p>
+</figure>
+</div>
+<figcaption>The Whiled Life</figcaption>
 </figure>
 </div>
 
@@ -84,14 +126,15 @@
  ]]></description>
   <category>poetry</category>
   <category>dogs</category>
-  <guid>https://blog.discurs.us/posts/2025-06-08-whiled-life/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2025-06-08-whiled-life/</guid>
   <pubDate>Sun, 08 Jun 2025 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Laundry days</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2025-06-02-laundry/index.html</link>
+  <link>https://blog.discurs.us/posts/2025-06-02-laundry/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -109,7 +152,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-06-02-laundry/paddle.jpg" class="img-fluid figure-img" width="1800"></p>
-<figcaption class="figure-caption">Paddling</figcaption>
+<figcaption>Paddling</figcaption>
 </figure>
 </div>
 <p>I did not get as far into my reading list as I had hoped. We are fortunate to have an abundance of thoughtful tech criticism coming out, and the gist of it can be cribbed from podcasts, but I think these issues deserve more time and attention than we have in our usual daily lives. I hope to do appropriate book reviews as I finish them this summer, but in case I don’t make it that far, I will try to summarize my current understanding:</p>
@@ -127,7 +170,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-06-02-laundry/salvia.jpg" class="img-fluid figure-img" width="1509"></p>
-<figcaption class="figure-caption">Salvia</figcaption>
+<figcaption>Salvia</figcaption>
 </figure>
 </div>
 
@@ -136,14 +179,15 @@
  ]]></description>
   <category>NLP</category>
   <category>evaluation</category>
-  <guid>https://blog.discurs.us/posts/2025-06-02-laundry/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2025-06-02-laundry/</guid>
   <pubDate>Mon, 02 Jun 2025 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Know your data, but keep test data unseen (Timeless ML Principles 3)</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</link>
+  <link>https://blog.discurs.us/posts/2025-01-12-know-your-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -151,8 +195,12 @@
 <p>In previous posts in the <a href="../../index.html#category=TMLP">TMLP series</a>, I have described what an ML system/data developer should learn from <a href="../../posts/2024-12-11-ml-principles/index.html">turtles</a> and <a href="../../posts/2025-01-03-ml-change/index.html">tadpoles</a>. This post describes what developers should learn from moray eels.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg"><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/moray-jaws.png" class="img-fluid figure-img" alt="pharyngeal jaws of moray eels" width="512"></a></p>
-<figcaption class="figure-caption">Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="https://en.wikipedia.org/wiki/File:Pharyngeal_jaws_of_moray_eels.svg"><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/moray-jaws.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="pharyngeal jaws of moray eels" width="512"></a></p>
+</figure>
+</div>
+<figcaption>Moray jaws open wide (image CC-BY Zina Deretsky and Ryan Wilson)</figcaption>
 </figure>
 </div>
 <section id="thats-a-moray" class="level2">
@@ -170,7 +218,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-teeth.gif" class="img-fluid figure-img" alt="Moray peaks out of a hole, slightly opening its mouth" width="256"></p>
-<figcaption class="figure-caption">A moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
+<figcaption>A moray shows its big front teeth (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -185,7 +233,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-yawn.gif" class="img-fluid figure-img" alt="Moray in crevasse opens its mouth wide" width="512"></p>
-<figcaption class="figure-caption">With big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)</figcaption>
+<figcaption>With big stretch, a moray shows its whole body and maw (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -200,7 +248,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/hiding.gif" class="img-fluid figure-img" alt="A moray peaks its head out from a hole, with coral and fish around it" width="256"></p>
-<figcaption class="figure-caption">A moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
+<figcaption>A moray keeps itself hidden (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 </section>
@@ -218,7 +266,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2025-01-12-know-your-data/big-reveal.gif" class="img-fluid figure-img" alt="A moray grabs a dead fish and pulls it back towards its hole"></p>
-<figcaption class="figure-caption">A moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
+<figcaption>A moray reveals its whole body, and shows a fish all its teeth (image mine, CC-BY-4.0)</figcaption>
 </figure>
 </div>
 
@@ -236,14 +284,15 @@ that’s a moray.</p>
   <category>morays</category>
   <category>ML</category>
   <category>evaluation</category>
-  <guid>https://blog.discurs.us/posts/2025-01-12-know-your-data/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2025-01-12-know-your-data/</guid>
   <pubDate>Sun, 12 Jan 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Keep knowing why ML (Timeless ML Principles 2)</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2025-01-03-ml-change/index.html</link>
+  <link>https://blog.discurs.us/posts/2025-01-03-ml-change/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -252,7 +301,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.flickr.com/photos/the1pony/3728761118/in/album-72157621478400640"><img src="https://blog.discurs.us/posts/2025-01-03-ml-change/tadpole1.jpg" class="img-fluid figure-img" alt="A tadpole with hints of legs stares into the camera" width="512"></a></p>
-<figcaption class="figure-caption">A tadpole considers its existence (photo CC-ND the1pony “Oh Hai!”)</figcaption>
+<figcaption>A tadpole considers its existence (photo CC-ND the1pony “Oh Hai!”)</figcaption>
 </figure>
 </div>
 <section id="know-why-ml-is-involved" class="level2">
@@ -261,7 +310,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.flickr.com/photos/the1pony/3727958415/in/album-72157621478400640"><img src="https://blog.discurs.us/posts/2025-01-03-ml-change/tadpole2.jpg" class="img-fluid figure-img" alt="A tadpole with little legs dangling" width="512"></a></p>
-<figcaption class="figure-caption">A tadpole prototyping some legs (photo CC-ND the1pony “Legs. I has them.”)</figcaption>
+<figcaption>A tadpole prototyping some legs (photo CC-ND the1pony “Legs. I has them.”)</figcaption>
 </figure>
 </div>
 </section>
@@ -271,7 +320,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.flickr.com/photos/the1pony/3744076062/in/album-72157621478400640"><img src="https://blog.discurs.us/posts/2025-01-03-ml-change/tadpole3.jpg" class="img-fluid figure-img" width="512"></a></p>
-<figcaption class="figure-caption">Tadpole with compatible legs and tail (photo CC-ND the1pony “Smiling for the camera”)</figcaption>
+<figcaption>Tadpole with compatible legs and tail (photo CC-ND the1pony “Smiling for the camera”)</figcaption>
 </figure>
 </div>
 </section>
@@ -281,7 +330,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.flickr.com/photos/the1pony/3776694971/in/album-72157621478400640"><img src="https://blog.discurs.us/posts/2025-01-03-ml-change/tadpole4.jpg" class="img-fluid figure-img" alt="Frog with a stub of a tail, resting on a hyacinth" width="512"></a></p>
-<figcaption class="figure-caption">Frog with a legacy tail (photo CC-ND the1pony “Frog on water hyacinth: this guy still has a small tail”)</figcaption>
+<figcaption>Frog with a legacy tail (photo CC-ND the1pony “Frog on water hyacinth: this guy still has a small tail”)</figcaption>
 </figure>
 </div>
 </section>
@@ -291,7 +340,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://www.flickr.com/photos/the1pony/3783106696/in/album-72157621478400640"><img src="https://blog.discurs.us/posts/2025-01-03-ml-change/frog.jpg" class="img-fluid figure-img" alt="Frog rests under a hyacinth leaf" width="512"></a></p>
-<figcaption class="figure-caption">An adult frog prepares for new changes (photo CC-ND the1pony “frog”)</figcaption>
+<figcaption>An adult frog prepares for new changes (photo CC-ND the1pony “frog”)</figcaption>
 </figure>
 </div>
 
@@ -302,14 +351,15 @@ that’s a moray.</p>
   <category>TMLP</category>
   <category>ML</category>
   <category>frogs</category>
-  <guid>https://blog.discurs.us/posts/2025-01-03-ml-change/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2025-01-03-ml-change/</guid>
   <pubDate>Fri, 03 Jan 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Machine learning is evaluation all the way down (Timeless ML Principles 1)</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</link>
+  <link>https://blog.discurs.us/posts/2024-12-11-ml-principles/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -320,8 +370,12 @@ that’s a moray.</p>
 <p>The first principle is that machine learning is evaluation all the way down. You may have heard lots about training, fine-tuning, reinforcement learning, multitask learning, or other such things, which do not sound like evaluation, but really these are all evaluation too. Top to bottom, first and foremost and through to the end, it’s evaluation.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://www.flickr.com/photos/mybloodyself/1108834349/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/mybloodyself_turtles.jpg" class="img-fluid figure-img" alt="Three turtles stacked up" width="400"></a></p>
-<figcaption class="figure-caption">A tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="https://www.flickr.com/photos/mybloodyself/1108834349/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/mybloodyself_turtles.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Three turtles stacked up" width="400"></a></p>
+</figure>
+</div>
+<figcaption>A tower of turtles (photo CC-BY-NC-SA 2.0 Dan Machold)</figcaption>
 </figure>
 </div>
 </section>
@@ -334,8 +388,12 @@ that’s a moray.</p>
 <p>And the top turtle, or the inner loop of training, is the opposite. It can be a simplistic objective loss function evaluated on out-of-domain data. You can get a model to do something useful for you with a pretty large departure from the extrinsic data and objective. A spam filter can block new kinds of spam that were not available for training, just by generalizing from simplistic representations of email. And fundamentally, LLMs start their development evaluating predictions of the next few characters in text corpora that might or might not contain examples of the genre of text that your system is generating.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://foto.wuestenigel.com/turtle-on-a-stone/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/turtle_on_stone.jpg" class="img-fluid figure-img" alt="One small turtle on top of various other turtles" width="400"></a></p>
-<figcaption class="figure-caption">A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="https://foto.wuestenigel.com/turtle-on-a-stone/"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/turtle_on_stone.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="One small turtle on top of various other turtles" width="400"></a></p>
+</figure>
+</div>
+<figcaption>A turtle on a turtle pile, evaluating his life choices (photo CC-BY 2.0 Marco Verch)</figcaption>
 </figure>
 </div>
 </section>
@@ -344,8 +402,12 @@ that’s a moray.</p>
 <p>And in between the two ends, as you descend your turtle pile through hyperparameter selection, intrinsic evaluation of particular components and subtasks, to error analysis on the system task, you want your data to more closely match the extrinsic data and evaluation metrics at each step. As in these pictures, each turtle should be a little closer to the foundation than the one above it. Principles that I will write about later go into more depth about what this means in practice, but at a high level it means that the academic data folds of train/test splits or conventional train/dev/test splits really break out into multiple datasets with multiple splits and disaggregation dimensions.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://flickr.com/photos/nickharris1/4858787832"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/nickharris1_turtle_pileup.jpg" class="img-fluid figure-img" alt="Two stacks of two turtles each" width="400"></a></p>
-<figcaption class="figure-caption">Two turtle piles (photo CC-BY-ND-2.0 Nick Harris)</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="https://flickr.com/photos/nickharris1/4858787832"><img src="https://blog.discurs.us/posts/2024-12-11-ml-principles/nickharris1_turtle_pileup.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Two stacks of two turtles each" width="400"></a></p>
+</figure>
+</div>
+<figcaption>Two turtle piles (photo CC-BY-ND-2.0 Nick Harris)</figcaption>
 </figure>
 </div>
 <p>It is true that LLMs add a bit more complexity here, where it’s not a single stack. You might have two stacks of turtles that merge together at the bottom, or a stack of turtles whose sole purpose is to generate data for one of the turtles in another stack. But this principle still holds: it’s all evaluation.</p>
@@ -358,14 +420,15 @@ that’s a moray.</p>
   <category>ML</category>
   <category>evaluation</category>
   <category>turtles</category>
-  <guid>https://blog.discurs.us/posts/2024-12-11-ml-principles/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2024-12-11-ml-principles/</guid>
   <pubDate>Wed, 11 Dec 2024 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>English is a minority language too</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</link>
+  <link>https://blog.discurs.us/posts/2022-04-03-english-minority-language/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -375,7 +438,7 @@ that’s a moray.</p>
 <section id="a-minority-of-economic-activity" class="level2">
 <h2 class="anchored" data-anchor-id="a-minority-of-economic-activity">A minority of economic activity</h2>
 <p>If you associate the <a href="https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)">GDP of each country</a> or region to the primary language of that country/region, you can get an approximate breakdown of economic activity attributable to each language, along the lines of this table:</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Rank</th>
@@ -452,7 +515,7 @@ that’s a moray.</p>
 <section id="a-minority-of-technology-users" class="level2">
 <h2 class="anchored" data-anchor-id="a-minority-of-technology-users">A minority of technology users</h2>
 <p>Surveys of technology users similarly show a long fat tail of preferred languages. In the <a href="https://www.internetworldstats.com/stats7.htm">internet language survey results</a> shown below, the single largest group of users do prefer English, but that number is smaller than the next two languages combined (Chinese and Spanish), and the top 10 languages together only account for 77% of the online population.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Rank</th>
@@ -529,7 +592,7 @@ that’s a moray.</p>
 <section id="a-minority-of-internet-content" class="level2">
 <h2 class="anchored" data-anchor-id="a-minority-of-internet-content">A minority of internet content</h2>
 <p>A <a href="https://w3techs.com/technologies/overview/content_language">standard survey of website languages</a> reports that 62.9% of websites are in English. However, the methodology used there assigns a language according to the default of the top-level page, ignoring subdomains, so any multilingual website that sets English as the default language will count for English in the results. Methods that count web pages, such as the <a href="https://funredes.org/lc2022/V3.2.htm">Indicators of languages in the internet</a> survey produce much lower estimates of the portion of internet content in English.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Rank</th>
@@ -597,8 +660,12 @@ that’s a moray.</p>
 <p>Since the economies of Asia and Africa have generally been growing faster than those of Europe and North America, English accounts for a declining portion of the global economy. In addition, as digital infrastructure development extends the reach of smartphones, and of the internet more generally, the pool of technology users continues to diversify.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?end=2019&amp;locations=XU-ZJ-Z7-Z4-8S-ZQ-ZG&amp;start=2010&amp;view=chart"><img src="https://blog.discurs.us/posts/2022-04-03-english-minority-language/gdp.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Global GDP by region 2010 to 2019</figcaption>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?end=2019&amp;locations=XU-ZJ-Z7-Z4-8S-ZQ-ZG&amp;start=2010&amp;view=chart"><img src="https://blog.discurs.us/posts/2022-04-03-english-minority-language/gdp.png" class="img-fluid quarto-figure quarto-figure-left figure-img"></a></p>
+</figure>
+</div>
+<figcaption>Global GDP by region 2010 to 2019</figcaption>
 </figure>
 </div>
 <p>All of this means that if you are on a research team investigating language technology or on a product team developing a language-dependent system, you really need to keep a global perspective and consider multiple languages in your plan. Otherwise you will either be limiting your impact to a small portion of your potential users or very poorly serving those users.</p>
@@ -610,20 +677,21 @@ that’s a moray.</p>
  ]]></description>
   <category>languages</category>
   <category>localization</category>
-  <guid>https://blog.discurs.us/posts/2022-04-03-english-minority-language/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2022-04-03-english-minority-language/</guid>
   <pubDate>Sun, 03 Apr 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Utija’ore ñamʉ chʉ’ʉ</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</link>
+  <link>https://blog.discurs.us/posts/2022-03-20-utijaore/</link>
   <description><![CDATA[ 
 
 
 
 
+
 <p>For the past couple months, I have been studying Koreguaje (aka Coreguaje, Korebaju), working through <a href="https://www.sil.org/resources/archives/19097">Ko’rehuajʉ chʉ’ore cutuñu</a> over voice calls with a family friend as tutor. We’ve gotten about half way through the book, but as the vocabulary and grammar get more difficult, I’m finding the need to slow down. The language is a Western Tucanoan language, indigenous to the upper Caquetá river valley in Colombia, on the edge of the Amazon basin. There are a couple closely related languages in the upper Caquetá region and the neighboring corner of Ecuador, and all other languages that are known to be related to it have home territories to the east, mostly in the Vaupés. But to me it feels familiarly like an Otomanguean language. There are suprasegmental nasalization, glottalization and tone that reminds me of Mixtec, though the tone system only has high and low, without contours. And a few common words are similar enough to trip me up sometimes:</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Koreguaje</th>
@@ -656,14 +724,15 @@ that’s a moray.</p>
  ]]></description>
   <category>languages</category>
   <category>linguistics</category>
-  <guid>https://blog.discurs.us/posts/2022-03-20-utijaore/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2022-03-20-utijaore/</guid>
   <pubDate>Sun, 20 Mar 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Wav2Vec2 Luganda</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</link>
+  <link>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -672,7 +741,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://colab.research.google.com/drive/1XxZ3mJOEXwIn-QH3C23jD_Qpom9aA1vH"><img src="https://blog.discurs.us/posts/2021-04-04-luganda-finetune/colab.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Reference and predicted text sample</figcaption>
+<figcaption>Reference and predicted text sample</figcaption>
 </figure>
 </div>
 <p>Over the past couple weekends I participated in an effort to “finetune” speech recognition models for each of the ~60 languages in the Common Voice dataset. I focused on Luganda because the languages I know more about either are not in the dataset or were well-covered by other participants. Using about 6 hours of read speech for training (i.e.&nbsp;people read sentences from public domain documents, and no separate text data was used for a language model), the <a href="https://huggingface.co/lucio/wav2vec2-large-xlsr-luganda">resulting model</a> reaches 23% word-error-rate, and considering that Bantu words are relatively long, this means it’s potentially useful for jump-starting transcription work, indexing an untranscribed audio corpus, or enabling a voice interface. It’s likely that an even lower error rate is possible using audio data from a related language for initial training, or using text data to guide the output.</p>
@@ -682,14 +751,15 @@ that’s a moray.</p>
  ]]></description>
   <category>languages</category>
   <category>speech technology</category>
-  <guid>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2021-04-04-luganda-finetune/</guid>
   <pubDate>Sun, 04 Apr 2021 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Want to feel old?</title>
   <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</link>
+  <link>https://blog.discurs.us/posts/2020-11-01-feel-old/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -701,7 +771,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/0_twitter_clip.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Nooruddean <span class="citation" data-cites="BeardedGenius">@BeardedGenius</span>: Want to feel old? Genuinely? Minus your age from the year you were born and find a moment in history that’s closer to your birthday than now. For me it’s Hitler invading France FFS</figcaption>
+<figcaption>Nooruddean <span class="citation" data-cites="BeardedGenius">@BeardedGenius</span>: Want to feel old? Genuinely? Minus your age from the year you were born and find a moment in history that’s closer to your birthday than now. For me it’s Hitler invading France FFS</figcaption>
 </figure>
 </div>
 <p>I am currently 41.7 years old. 83.3 years ago, on Aug 6, 1937, newly elected L.A. City Councilman <a href="https://en.wikipedia.org/wiki/Howard_E._Dorsey">Howard E. Dorsey</a> drove off the edge of the Rim of the World Highway, tumbled down a cliff, and died. Certainly not as notable an event as some of the other ones people are picking, but hear me out — I think there’s an apropos morality tale or two in this history.</p>
@@ -711,7 +781,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/1_winfred_sanborn.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Winfred Sanborn as a middle aged man with a mustache, dressed in a suit.</figcaption>
+<figcaption>Winfred Sanborn as a middle aged man with a mustache, dressed in a suit.</figcaption>
 </figure>
 </div>
 <p>The personal significance of Howard E. Dorsey’s death is not that his aunt, L.A. Schools Superintendent Susan Dorsey, gave her name to my mother’s high school, also in 1937, though that is pretty cool too. Howard Dorsey got his start as the campaign manager for my great-great-grandfather <a href="https://en.wikipedia.org/wiki/Winfred_J._Sanborn">Winfred Sanborn</a> (pictured), who had served as an L.A. City Councilman throughout the 1920s, and when Dorsey died, Winfred was appointed to complete his term. Winfred first joined the city council in 1919, and left the council for the second time 20 years later. A lot had changed in that time…</p>
@@ -721,7 +791,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/2_influenza.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">A chart of “Influenza Cases and Deaths in Los Angeles”, a newspaper clipping from February 1919. Marked events include “Effect of Armistice Celebration”, “Effect of Thanksgiving Day” and “Effect of Christmas”.</figcaption>
+<figcaption>A chart of “Influenza Cases and Deaths in Los Angeles”, a newspaper clipping from February 1919. Marked events include “Effect of Armistice Celebration”, “Effect of Thanksgiving Day” and “Effect of Christmas”.</figcaption>
 </figure>
 </div>
 <p>After careers in the postal service and undertaking, Republican Winfred Sanborn was elected in the summer of 1919, when the population of Los Angeles was just over half a million people. He is remembered in the family as a multi-talented and kind man. The Spanish Flu had just hit L.A. hard that winter, and there had been major protests and lawsuits against mandatory masks, and closures of churches, theaters and schools. By one count, 2713 people died of the flu during 1918 and 1919 in Los Angeles, about 25% of deaths over that time period.</p>
@@ -731,7 +801,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/3_nurses_resign.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Newspaper clipping: “STUDENT NURSES RESIGN One hundred and twenty-six student nurses out of 187 at the County Hospital sent in their resignations yesterday to take effect November 1, their protest to the Board of Supervisors against the admission of colored girls as student nurses having failed.”</figcaption>
+<figcaption>Newspaper clipping: “STUDENT NURSES RESIGN One hundred and twenty-six student nurses out of 187 at the County Hospital sent in their resignations yesterday to take effect November 1, their protest to the Board of Supervisors against the admission of colored girls as student nurses having failed.”</figcaption>
 </figure>
 </div>
 <p>At the Los Angeles County Hospital, Black students had been barred from the training school for nurses, up until the previous fall. Throughout WW I the L.A. chapter of the NAACP had campaigned to open the program to Black students, on the practical matter that Black nurses could have been saving lives in the war effort. When Black student nurses were finally admitted to help with the flu epidemic, 126 white student nurses resigned in protest.</p>
@@ -741,7 +811,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/4_not_kkk.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Newspaper clipping of picture of men lined up wearing masks, captioned: “Not Ku Klux Klan, but Draft Men Drilling in ’Flu Masks.”</figcaption>
+<figcaption>Newspaper clipping of picture of men lined up wearing masks, captioned: “Not Ku Klux Klan, but Draft Men Drilling in ’Flu Masks.”</figcaption>
 </figure>
 </div>
 <p>Hollywood had released <a href="https://en.wikipedia.org/wiki/The_Birth_of_a_Nation">D. W. Griffith’s <em>The Birth of a Nation</em></a> just 4 years before. More widely in America, 1919 was the year of the “<a href="https://en.wikipedia.org/wiki/Red_Summer">Red Summer</a>”, when riots in dozens of cities across the United States targeted Black communities. My grandfather Mario was a seven-year-old living on the outskirts of Chicago, where one of the largest massacres occurred. At least 38 people were killed, hundreds more were injured, and about 1000 Black families were left homeless. Inspired by <em>The Birth of a Nation</em> and the Red Summer, KKK membership reached 5 million people in the mid 1920s. In 1919, the LA Times could joke about soldiers in flu masks resembling a KKK rally.</p>
@@ -751,7 +821,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/5_genoveva.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Genoveva (center front) with her parents and many siblings, all dressed up</figcaption>
+<figcaption>Genoveva (center front) with her parents and many siblings, all dressed up</figcaption>
 </figure>
 </div>
 <p>1919 was also the year that my five-year-old grandmother Genoveva crossed the border from Sonora, Mexico, escaping from the civil war there. The family settled in Los Angeles, west of downtown. The following decade saw dramatic immigration and growth in L.A. — the population of L.A. doubled from 1920 to 1930, while the population of Mexican Americans in the city tripled.</p>
@@ -761,7 +831,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/6_prison_special_tour.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Suffragettes address a San Francisco crowd from the back of an open carriage motorcar.</figcaption>
+<figcaption>Suffragettes address a San Francisco crowd from the back of an open carriage motorcar.</figcaption>
 </figure>
 </div>
 <p>It was also in 1919 that suffragists launched the <a href="https://www.nps.gov/articles/democracy-limited-the-prison-special.htm">“Prison Special Tour”</a>, holding rallies across the country wearing prison clothes as a reminder of the prison terms that many of them had endured over the previous few years for crimes like holding open-air meetings, silently picketing the White House, and holding a banner quoting the Declaration of Independence: “Governments derive their just powers from the consent of the governed.” They were again sometimes attacked by crowd members or arrested, but it bent public attention to make it a national priority, leading to the 19th amendment, recognizing women’s right to vote, being passed by Congress and submitted to the states for ratification. It was also in 1919 that the 18th amendment was ratified, prohibiting the production and sale of alcohol. The prohibition of alcohol lead to a marked increase in corruption and mafia influence in Los Angeles. The recognition of women’s right to vote, as momentous as it was, had smaller influence, at least initially.</p>
@@ -771,7 +841,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/7_dw_nominate.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Mean DW-NOMINATE Difference for House versus Top One Percent Income Share, 1923-2012</figcaption>
+<figcaption>Mean DW-NOMINATE Difference for House versus Top One Percent Income Share, 1923-2012</figcaption>
 </figure>
 </div>
 <p>1919 was also a crest in political polarization and income inequality. Through the roaring 20s, income inequality creeped further up, while political polarization started to fall, perhaps broken by the patriotism surrounding WW I. It was finally the New Deal policies of the Great Depression, and the patriotically high taxes of the WW II war effort that brought inequality back down, and laid the foundation for the shared prosperity of the post-war boom.</p>
@@ -781,7 +851,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/8_wilson_ticket.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Image of entry ticket: “This ticket entitles W. J. Sanborn to one seat on the platform; PRESIDENT WILSON MEETING; Shrine Auditorium; Saturday, September 20th, 1919”</figcaption>
+<figcaption>Image of entry ticket: “This ticket entitles W. J. Sanborn to one seat on the platform; PRESIDENT WILSON MEETING; Shrine Auditorium; Saturday, September 20th, 1919”</figcaption>
 </figure>
 </div>
 <p>One of Winfred’s first official activities was welcoming President Wilson on his arrival to Los Angeles in September 1919, part of Wilson’s campaign to gain support for forming the League of Nations. Wilson’s health was already failing (possibly from complications of the flu), and he would have a debilitating stroke in October. Also in October he was awarded the Nobel Peace Prize for his efforts to form the League of Nations, but in his weakened state, he was unsuccessful in convincing the United States to join, and the United States turned towards isolationism.</p>
@@ -791,7 +861,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/9_viaduct.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Historical photo of the 9th Street viaduct across the Los Angeles River</figcaption>
+<figcaption>Historical photo of the 9th Street viaduct across the Los Angeles River</figcaption>
 </figure>
 </div>
 <p>With the exception of the rising corruption, none of these issues seem to have been major concerns of Winfred’s years on the city council. I like to imagine his experience in the undertaking industry during the flu epidemic must have influenced his decision to run for city council, and one of his committee memberships was the Public Health and Sanitation committee. But his primary motive and major effort throughout the 1920s was on improving the transportation system, especially in connecting East L.A. to downtown, such as the system of viaducts crossing the L.A. river, including the 9th Street crossing shown here.</p>
@@ -801,7 +871,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/10_betty_hill.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Activist Betty Hill (left) with other members of the Republican Women’s Study Club.</figcaption>
+<figcaption>Activist Betty Hill (left) with other members of the Republican Women’s Study Club.</figcaption>
 </figure>
 </div>
 <p>In 1926, the Los Angeles Playground Commission officially <a href="https://la.curbed.com/2019/8/19/20757888/betty-hill-segregation-pools">segregated most of the public swimming pools in the city</a>. For the “public welfare”, swimming pools were designated for whites only except for one day a week, called “colored day” or “international day”. Activist Betty Hill (pictured on left) was affiliated with the NAACP but carried out most of her activism through her neighborhood association and a group she started, called the Republican Women’s Study Club. Immediately after the decision was made to segregate the swimming pools and for the next five years, Betty Hill led a series of boycotts and lawsuits to push the city to reverse the decision. Initial judicial rulings allowed the segregation on “separate but equal” grounds, because there was one swimming pool in the city that allowed children of all races throughout the week. Finally in 1931, a judge ruled that the city had to integrate the swimming pools. Three times the city council voted on whether to contest the ruling, twice while Winfred was in office and once after he left. Each time, the city narrowly declined to contest the ruling. I don’t know how Winfred voted, and it was not a significant issue in that election. Similar practices of “Mexican Mondays” at public pools were known elsewhere in California, <a href="https://scholarworks.lib.csusb.edu/history-in-the-making/vol3/iss1/4/">as late as 1944 in San Bernardino</a>.</p>
@@ -811,7 +881,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/11_deportations.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Deportees lined up in Central Station, headed for Mexico.</figcaption>
+<figcaption>Deportees lined up in Central Station, headed for Mexico.</figcaption>
 </figure>
 </div>
 <p>The primary issues of the 1931 election were about public versus private ownership of the city utilities. Winfred was not strongly on either side of the issue, but he was opposed by the Police Chief James Davis (who at least initially was intent on reforming the city government) and he lost his re-election campaign. 1931 was also a difficult year all-around. 16 year-old Genoveva had dropped out of school the year before, to help support the family. There were bread lines and hunger marches, and Los Angeles County <a href="https://en.wikipedia.org/wiki/Mexican_Repatriation">deported legal residents and even many citizens to Mexico</a>.</p>
@@ -821,7 +891,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/12_light_festival.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Light festival celebrating arrival of electricity from Hoover Dam.</figcaption>
+<figcaption>Light festival celebrating arrival of electricity from Hoover Dam.</figcaption>
 </figure>
 </div>
 <p>By 1937, when Winfred Sanborn was reappointed to the city council, Los Angeles had reached 1.5 million people. The first LA freeway was under construction, and electricity from the Hoover Dam had just reached the city the year before, prompting the light festival shown in the picture. By 1940, L.A. would be pulling its drinking water all the way from Mono Lake, beyond Yosemite.</p>
@@ -831,7 +901,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/13_clinton_raymond.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Clifford Clinton and Harry Raymond</figcaption>
+<figcaption>Clifford Clinton and Harry Raymond</figcaption>
 </figure>
 </div>
 <p>The corruption in city goverment had reached a crisis point. In October 1937, the L.A. Police bombed the house of Clifford Clinton, a grand jury member who was leading an investigation of Mayor Frank Shaw. In January 1938, the LAPD then bombed the car of Harry Raymond, a private investigator working with Clinton. The picture shows Clinton and Raymond after the second bombing.</p>
@@ -841,7 +911,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/14_lapd_parade.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">LAPD officers on motorcycles lined up for a parade</figcaption>
+<figcaption>LAPD officers on motorcycles lined up for a parade</figcaption>
 </figure>
 </div>
 <p>When it was clear that the LAPD was responsible, Mayor Shaw was recalled from office, and the successor, Mayor Bowron worked with the grand jury to remove Police Chief Davis and clean the corruption out of the police department and city government. He also appointed the first African American and the first woman to the police commission. Winfred was not particularly associated with either Mayor Shaw or Mayor Bowron, but due to the anti-incumbent mood, he was not re-elected in 1939.</p>
@@ -851,7 +921,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/15_interracial_marriage.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Excerpt of Perez et al v. Sharp, challenging California laws against interracial marriage</figcaption>
+<figcaption>Excerpt of Perez et al v. Sharp, challenging California laws against interracial marriage</figcaption>
 </figure>
 </div>
 <p>In 1948, the year after Winfred died and the year before his granddaughter, my Grandma Lynette got married, the California Supreme Court ruled that the Los Angeles County Clerk could not deny a marriage license to Mexican American Andrea Perez and African American Sylvester Davis, finding that California’s laws against mixed race marriages were unconstitutional. 20 years later, the US Supreme Court ruled that all such state laws were unconstitutional. Still it was 30 more years, the same year I graduated high school, before a narrow majority of US residents approved of interracial marriages.</p>
@@ -861,7 +931,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/16_equal_rights_amendment.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Protestors carrying a banner with the words of the proposed Equal Rights Amendment: “Equality of rights under the law shall not be denied or abridged by the United States or by any state on account of sex.”</figcaption>
+<figcaption>Protestors carrying a banner with the words of the proposed Equal Rights Amendment: “Equality of rights under the law shall not be denied or abridged by the United States or by any state on account of sex.”</figcaption>
 </figure>
 </div>
 <p>The same women who championed the 19th amendment in 1919 introduced the Equal Rights Amendment in 1923. It was finally passed in Congress 50 years later with wide bipartisan support, but the process stalled out during ratification. In January 2020, Virginia became the 38th state to finally ratify the amendment, which would have been the criterion for enacting it, but because of expired deadlines and revoked ratifications, the status of the Equal Rights Amendment is still in limbo.</p>
@@ -871,7 +941,7 @@ that’s a moray.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blog.discurs.us/posts/2020-11-01-feel-old/17_winfred_smiling.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Winfred J. Sanborn as a smiling old man</figcaption>
+<figcaption>Winfred J. Sanborn as a smiling old man</figcaption>
 </figure>
 </div>
 <p>To be terribly unsubtle, here are some lessons I see:</p>
@@ -891,7 +961,7 @@ that’s a moray.</p>
  ]]></description>
   <category>history</category>
   <category>politics</category>
-  <guid>https://blog.discurs.us/posts/2020-11-01-feel-old/index.html</guid>
+  <guid>https://blog.discurs.us/posts/2020-11-01-feel-old/</guid>
   <pubDate>Sun, 01 Nov 2020 07:00:00 GMT</pubDate>
 </item>
 </channel>
