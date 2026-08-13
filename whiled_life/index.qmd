@@ -15,7 +15,7 @@ format: revealjs
 
 ![page 0](images/whiled-life-0.png)\
 
-![cover page. The While Life: Canine Wisdomm for a Contemplative Life, by Tom "Darkest Skye" Barker, illustrated by Du Silva Carroll](images/whiled-life-1.png)\
+![cover page. The While Life: Canine Wisdom for a Contemplative Life, by Tom "Darkest Skye" Barker, illustrated by Du Silva Carroll](images/whiled-life-1.png)\
 
 :::
 

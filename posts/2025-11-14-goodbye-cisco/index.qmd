@@ -8,9 +8,9 @@ categories:
 
 This week I turned in my Cisco badge after 8.5 years there with the MindMeld team, on top of 2 years with MindMeld, Inc before we were acquired by Cisco. Through more than a decade with the same team, in many ways it changed every year.
 
-![](images/cisco-badge.jpeg){fig-alt="Photo of Lucien Carroll's badge, with a Cisco logo on a wall in the background"}
+![My badge](images/cisco-badge.jpeg){fig-alt="Photo of Lucien Carroll's badge, with a Cisco logo on a wall in the background"}
 
-This was my first job out of grad school, and when I started, I could offer very little evidence that I could do anything very practical as a "Search Quality Engineer" at an "intelligent voice interfaces" startup.[^1] I had no engineering degree, I hadn't taken a computer science course in over a decade, and I had been in grad school since the year I got my first mobile phone. I had a masters thesis I never finished, and a PhD dissertation that I had not defended yet. I had never shared a git repo with anyone, and I didn't know what a JSON format was.
+This was my first job out of grad school, and when I started, I could offer very little evidence that I could do anything very practical as a "Search Quality Engineer" at an "intelligent voice interfaces" startup.[^1] I had no engineering degree, I hadn't taken a computer science course in over a decade, and I had been in grad school since the year I got my first mobile phone. I had a masters thesis I never finished, and an unrelated PhD dissertation that I had not defended yet. I had never shared a git repo with anyone, and I didn't know what a JSON format was.
 
 [^1]: This was before we were calling everything "AI" – the puffery was about "intelligent", "smart" and "machine learning", and there was just one mention of "AI" on [the website in those days](https://web.archive.org/web/20150323122330/https://www.expectlabs.com/).
 
