@@ -1,0 +1,82 @@
+---
+date: 2024-09-08
+description: I want careful sociotechnical solutions, not hyped up tech solutionism
+title: Why I am not an AI developer
+---
+
+A century ago, Bertrand Russell gave a talk entitled ["Why I am not a Christian"](https://archive.org/details/why-i-am-not-a-christian), in which he outlined why he believed that a god, as conceptualized by Christians, does not exist. While conceding that some teachings of that tradition have been beneficial, he considered that:
+
+> the Christian religion, as organized in its churches, has been and still is the principal enemy of moral progress in the world.
+
+In this essay, I make a parallel argument about "AI": it does not exist as conceptualized by adherents, and the AI enterprise, as organized in current industry, is an obstacle to the progress we are claiming to pursue.
+
+# What is AI?
+
+-   It is not a technology
+
+-   It is a marketing brand
+
+-   It is a branch of science research
+
+-   It is a religious ideology
+
+-   It is a political ideology
+
+-   It is an industrial revolution
+
+> Actually, it's only "AI" if it comes from science fiction. If it routinely works in the real world, it's just sparkling computation. [source](https://mastodon.social/@serapio/111916334791469019)
+
+I'm a linguist, so I know very well that the meaning of words is determined by what communities of people *conventionally intend them to mean*.\
+I understand that the meaning of "AI" is shifting as people use it to refer to technologies that didn't exist 70 years ago. But still the scope of what people call "AI" is quite broad.
+
+## It is not a technology but it is technology
+
+A common intuition is that "artificial intelligence" is a technology, but it is not a particular technology, nor is it even a coherent set of technologies. Systems that have been called "AI" consist of a wide variety of computational systems, from rule-based parsers and structured databases to weather forecast and speech synthesis models. These different kinds of systems have different strengths and benefits, and different kinds of hazards and costs.
+
+On the other hand, any instance of an "AI" system is technology, in the sense that it is both an application of science and a material cultural artifact intended for a useful purpose. With the caveats that there is certainly room for argument about what constitutes a useful purpose, and even more so whether any particular system fulfills its purpose, reminding ourselves that "AI" systems are technology provides important perspective. These systems are in a sense tools, even when their purpose is play. These systems grow out of science and culture, not just out of bits and computation. Through science, it should be possible to reach a shared understanding of how these systems work, while design and use of these systems will interact with other cultural conventions and values.
+
+## It is a marketing brand
+
+"Artificial Intelligence" is a term born from marketing and science fiction. The underlying technology that it has been applied to is as broad as "computation", "algorithm" or "software", while aspiring to hypothetical futures. Calling so many wildly different things by the same label subliminally ties current technologies to speculative imaginary worlds, creating mysterious hype for people trying to get research funding or inflated capital investment, while planting misconceptions and doubt for practitioners and end users alike.
+
+Nearly all of our terminology in computer science is a metaphor based on something old. At one time, even the words "computation" and "algorithm" referred to activities that *people* did. Mathematicians in astronomy, code breaking, and meteorology (especially assistants and women) were [known as "computers"](https://en.wikipedia.org/wiki/Computer_(occupation)) who followed "algorithms" until after the invention of electronic computers. When "artificial intelligence" was [coined in 1956 by the first AI apostles](https://en.wikipedia.org/wiki/Dartmouth_workshop), the success of the new-fangled electronic computers was a major inspiration and a clear example. In this sense, "computation" and "algorithm" have shifted senses in parallel with "intelligence" --- from activities of human minds to activities that machines do emulating human cognition. Russell and Norvig's modern definition of AI even limits it as a *subfield* within algorithmic computation. And yet throughout its history, the usage of "AI" has intentionally straddled into a speculative future, invoking hypothetical scientific breakthroughs.
+
+## It is a branch of science research
+
+In the early days of artificial intelligence as a research initiative, the scope was any challenging problems for electronic computers. Since it was framed as studying behaviors that were "now reserved for humans", anything computers couldn't do was potentially in scope.
+
+> Intelligence is whatever machines haven't done yet. - [Tesler's Theorem](https://www.nomodes.com/larry-tesler-consulting/adages-and-coinages)
+
+That included the theory of basic algorithms, symbolic logic, rule-based game play, and knowledge representation, in addition to learning, language, abstract concepts, decision control, and creativity. But as aspects of the field became formalized, those aspects become computationally tractable, the applications become more dependable, and the functionality lost its mystery. At that point, that functionality is no longer considered artificial intelligence. Just as with physical and biological sciences branching out of philosophy formalizing and testing myth and magic, as computational science advanced, the realm of AI magic receded.
+
+The [Russell and Norvig's standard AI textbook](http://aima.cs.berkeley.edu/) rightly covers many topics spread out over 28 chapters.\
+It's possible for one person to have some expertise in several of those fields, but not in all 28 chapters. Real world automated systems may recognize and reproduce vocabulary from all those fields and more, but in functionality they are more specialized. A model can have word associations for "reasoning", "planning", and "perception" without demonstrating those behaviors.
+
+## It is a fantasy
+
+-   The association to (dystopian) science fiction just adds to the confusion
+
+# Some aspects of "AI" have been beneficial
+
+It is possible to do some math and exploratory science about hypothetical technologies, but that is not a field of engineering. When I am being a scientist, I am not really a computer scientist, I'm a linguist --- a language scientist --- wanting to understand what language is and how people do it, and I don't really care about the NLP models on their own. As an engineer, I want to use NLP models that are accurate and computationally efficient. But as a scientist, I'm interested in the NLP models as wrong-but-useful foils for human cognition. The patterns of failures are more interesting than the failure rate, and a simple interpretable model with moderate accuracy is more valuable than a giant proprietary model with high accuracy.
+
+As an engineer, I want to build useful features in sociotechnical systems, features that improve people's quality of life. With rare exception, people do not care how much their devices are internally capable of learning, planning or reasoning. People want whimsy in their toys, but they want their tools to reliably behave as expected, regardless of what's inside. Reliably fulfilling user needs depends primarily on well-known technology along with careful study of users interacting with the system. At times, a component of a system can be effectively satisfied by some new technology, but quite often boring old technology serves the user better.
+
+But I am also excited about some of the new technology. Multitask and multimodal models are enabling rapid progress on historically difficult tasks like summarization, question answering, and speech understanding. When I took my first computational linguistics class more than 20 years ago, it was summarization that really caught my attention, and new models are a huge improvement over what was possible at that time. They are still not quite reliable, but they have become useful. In addition, multilingual models enable functionality for low resource languages and low resource domains that would be very difficult or impossible with resources from that language/domain alone. For example, for many years the standard advice was that you needed 100 hours of transcribed speech data in order to train a speech recognition model, but now you can [fine-tune a multilingual model on just a few hours of data from a new language](../2021-04-04-luganda-finetune/), and get a useful model for that language.
+
+# The "AI" enterprise is an obstacle to progress
+
+# AI apocolypse now
+
+-   The risks of "AI" are real, and are generally not new but inflated by the hype
+
+## Misattributed agency
+
+> The real ghost in the machine was inside us all along.
+
+They will metaphorically attribute intent and agency to rolling balls and missing socks, and even more so to broken webpages or autocorrect.
+
+## Race to the bottom
+
+-   In particular, companies are expecting a winner-take-all market, because we have been living in an increasingly monopolistic bigtech world, and multimodal multilingual large foundation models can generalize across tasks
+-   However: current monopolism is due to a shortage of antitrust action over the past 50 years, and do-everything foundation models can never be as reliable and efficient as specialized models.

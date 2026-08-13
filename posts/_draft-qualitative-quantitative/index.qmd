@@ -1,0 +1,18 @@
+---
+title: 
+description: 
+date: 
+category: 
+---
+
+Use both qualitative and quantitative evaluation, both are essential.
+
+The qualitative evaluation is essential for understanding: to define the scope of open questions, for designing and interpreting quantitative work.
+
+While the quantitative evaluation is essential for generalization, to go beyond the data that a single person can understand at once, and estimate the confidence about how well the patterns in the numbers are really representative or reliable with respect to the outside world.
+
+For that really to work, you need to be careful about the quantitative design and do it from multiple perspectives too.
+
+All of this, these are all estimates and "all models are wrong, but some are useful."
+
+Even the best evaluation is not perfect, each step is getting closer, getting a better perspective.
