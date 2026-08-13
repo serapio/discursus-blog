@@ -10,43 +10,7 @@
 <atom:link href="https://blog.discurs.us/index.xml" rel="self" type="application/rss+xml"/>
 <description>Here are some things I have written down.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Sun, 02 Aug 2026 07:00:00 GMT</lastBuildDate>
-<item>
-  <title>Towards less corruptible cultural technologies</title>
-  <dc:creator>Lucien Carroll</dc:creator>
-  <link>https://blog.discurs.us/posts/2026-07-28-incorruptible/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>While on vacation in June, I found the time to read a book I had much anticipated: Eric Ries’ <em>Incorruptible</em>. It was a fascinating, hopeful, and thought-provoking read, but one key thought it has provoked is a personal beef with the title. He has commented in interviews that “Less corruptible” just doesn’t have the same ring to it, but I think that really would have been more appropriate.</p>
-<p>Eric Ries, most known as the author of <em>Lean Startup</em>, offers a diagnosis and remedy for the epidemic of companies that betray the trust of their customers and employees, corrupt the values and purpose established by the founders, and ultimately damage the long-term value of the company, just in order to capture short-term profits for shareholders. That by itself is a problem for all of us. Few of us are founders, and most of us are only small-time shareholders through our retirement accounts. But so many employers have betrayed their workers, and so many producers have betrayed their customers, that all of us have stories – favorite brands ruined by private equity, big tech companies that once prioritized user experience now act like slumlords, and so-called “purpose-driven” corporations that have only the slightest hesitation about sponsoring human rights abuses or hastening the destruction of our planet.</p>
-<p>Beyond that, I have become convinced that understanding company governance is a key angle of attack on re-establishing healthy internet governance and understanding governance of artificial intelligence. To start by stating the more obvious, late-stage capitalism is a fundamental cause of many of the harms associated with the current internet and with artificial intelligence. The enshittification of the internet is fundamentally springing from the technical ease of software user surveillance in a context of policies that have favored monopolies over the past 30 years. The rest of it is short-term profit maximization. Similarly, the artificial intelligence bubble is driven by FOMO on monopolizing whatever market transitions are caused by this technology change, and in this race, the big players have ignored others rights and known harms or decided to ask forgiveness rather than permission.</p>
-<p>But there is also a deeper reason that all of these are connected. Corporate bureaucracies, the internet, and large language models are all cultural technologies – systems that people have co-constructed, complex external representations of even more complex collective knowledge. Cultural technologies can facilitate information access, conceptual reorganization, and human coordination. But the simplification in these information systems also shifts our culture and cognition. And they can shift power – good governance can distribute power, establish healthy ecosystems, and enable human flourishing, while misgovernance can concentrate power and facilitate abuse, impunity, and <em>corruption.</em></p>
-<p>While reading <em>Incorruptible</em>, I was struck by how often the companies mentioned as examples of good governance with mission guardians were companies that I recognized from the news, from stories of betraying their own customers or employees, or backing down from their mission commitments. Even these lighthouse examples of “incorruptible” company structures were not immune from corruption.</p>
-<ul>
-<li><p>Novo Nordisk: Founded with the mission of making diabetes care accessible to all, its mission-lock structure has not prevented it from engaging in price gouging on insulin and weight-loss enzymes, or from participating in the deceptive marketing practices common in the pharmaceutical industry.</p></li>
-<li><p>Costco</p></li>
-<li><p>Anthropic</p></li>
-<li><p>Patagonia</p></li>
-<li><p>Ikea</p></li>
-<li><p>Johnson &amp; Johnson</p></li>
-<li><p>Duolingo</p></li>
-<li><p>gitlab</p></li>
-<li><p>google</p></li>
-<li><p>cloudflare</p></li>
-<li><p>rei</p></li>
-<li><p>sama</p></li>
-</ul>
-
-
-
- ]]></description>
-  <guid>https://blog.discurs.us/posts/2026-07-28-incorruptible/</guid>
-  <pubDate>Sun, 02 Aug 2026 07:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Fri, 14 Nov 2025 08:00:00 GMT</lastBuildDate>
 <item>
   <title>Goodbye Cisco</title>
   <dc:creator>Lucien Carroll</dc:creator>
